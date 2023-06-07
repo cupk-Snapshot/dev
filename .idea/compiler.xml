@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="snapshot-auth" />
+        <module name="snapshot-gateway" />
+        <module name="snapshot-file" />
+        <module name="snapshot-api" />
+        <module name="snapshot-admin" />
+        <module name="snapshot-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="snapshot-media" target="1.8" />
+      <module name="snapshot-vue" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
