@@ -1,7 +1,7 @@
 package com.cupk.snapshot.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.cupk.snapshot.model.entity.SysUser;
+import com.cupk.snapshot.model.domain.entity.SysUser;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

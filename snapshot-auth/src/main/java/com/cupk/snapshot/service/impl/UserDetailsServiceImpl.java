@@ -2,9 +2,9 @@ package com.cupk.snapshot.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.cupk.snapshot.controller.User;
-import com.cupk.snapshot.controller.UserVo;
-import com.cupk.snapshot.model.entity.SysUser;
+import com.cupk.snapshot.domain.model.User;
+import com.cupk.snapshot.domain.model.vo.UserVo;
+import com.cupk.snapshot.model.domain.entity.SysUser;
 import com.cupk.snapshot.mapper.SysUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -27,16 +27,17 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     private SysUserMapper sysUserMapper;
 
     /**
-     * 根据用户名从数据库中查询用户信息
+     * 根据用户名或手机号从数据库中查询用户信息
      *
-     * @param s 登录用户名
+     * @param s 登录用户名或手机号
      * @return UserDetails接口的实现类User，封装了UserVo类
      * @throws UsernameNotFoundException 用户名不存在
      */
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
         SysUser sysUser = sysUserMapper.selectOne(new LambdaQueryWrapper<SysUser>()
-                .eq(SysUser::getUserName, s));
+                .eq(SysUser::getUserName, s)
+                .or().eq(SysUser::getPhone, s));
         if (!ObjectUtils.isEmpty(sysUser)) {
             // 查询用户权限信息
             Set<SimpleGrantedAuthority> authorities = new HashSet<>();
@@ -46,7 +47,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
             UserVo userVo = BeanUtil.toBean(sysUser, UserVo.class);
             return new User(authorities, sysUser.getPassWord(), sysUser.getUserName(), userVo);
         }
-        throw new UsernameNotFoundException("用户名未注册");
+        throw new UsernameNotFoundException("用户名或手机号未注册");
     }
 
 }
