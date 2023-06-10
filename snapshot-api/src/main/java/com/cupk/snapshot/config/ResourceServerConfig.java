@@ -1,5 +1,11 @@
 package com.cupk.snapshot.config;
 
+import cn.hutool.core.bean.BeanUtil;
+import com.cupk.snapshot.handler.UserAuthenticationEntryPoint;
+import com.cupk.snapshot.response.R;
+import com.cupk.snapshot.service.TokenKeyService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
@@ -8,23 +14,46 @@ import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 
+import javax.annotation.PostConstruct;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 解析Jwt Token
  */
 @Configuration
+@FeignClient
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
+    @Autowired
+    private UserAuthenticationEntryPoint authenticationEntryPoint;
+
+    @Autowired
+    private TokenKeyService tokenKeyService;
+
+    private String publicKey;
+
     /**
-     * Jwt Access_token转换器
-     * 解析前台传来的token
-     * @return
+     * JwtAccessToken转换器，解析前台传来的token
      */
     @Bean
     public JwtAccessTokenConverter jwtAccessTokenConverter() {
         JwtAccessTokenConverter jwtAccessTokenConverter = new JwtAccessTokenConverter();
         // 设置签名密钥，对称加密
-        jwtAccessTokenConverter.setSigningKey("sign-key");
+//        jwtAccessTokenConverter.setSigningKey("sign-key");
+        // 设置签名密钥，非对称加密
+        jwtAccessTokenConverter.setVerifierKey(publicKey);
         return jwtAccessTokenConverter;
+    }
+
+    /**
+     * 初始化时远程调用授权服务器，获取JWT签名公钥
+     */
+    @PostConstruct
+    public void init() {
+        R key = tokenKeyService.getKey();
+        Map<String, Object> map = BeanUtil.beanToMap(key.getData(), new HashMap<>(), false, true);
+        this.publicKey = (String) map.get("value");
     }
 
     @Bean
@@ -32,27 +61,11 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
         return new JwtTokenStore(jwtAccessTokenConverter());
     }
 
-//    @Bean
-//    public ResourceServerTokenServices tokenServices() {
-//        RemoteTokenServices services = new RemoteTokenServices();
-//        services.setCheckTokenEndpointUrl("http://localhost:9999/oauth/check_token");
-//        services.setClientId("qq");
-//        services.setClientSecret("qq-secret");
-//        return services;
-//    }
-
-
     @Override
     public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
-//        resources.tokenServices(tokenServices()).stateless(true);
         resources.tokenStore(tokenStore());
+        // AccessDeniedException会被全局异常处理捕获
+        resources.authenticationEntryPoint(authenticationEntryPoint);
     }
 
-//    @Override
-//    public void configure(HttpSecurity http) throws Exception {
-//        http.csrf().disable();
-//        http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-//        http.authorizeRequests().antMatchers("/**").access("#oauth2.hasScope('all')");
-//
-//    }
 }

@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="snapshot-auth" />
         <module name="snapshot-gateway" />
+        <module name="snapshot-test" />
         <module name="snapshot-file" />
         <module name="snapshot-api" />
         <module name="snapshot-admin" />
@@ -16,6 +17,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="snapshot-media" target="1.8" />
+      <module name="snapshot-test" target="1.8" />
       <module name="snapshot-vue" target="1.8" />
     </bytecodeTargetLevel>
   </component>

@@ -6,4 +6,13 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: localhost:8848
+        server-addr: 192.168.10.130:8848
+
+#security:
+#  oauth2:
+#    resource:
+#      jwt:
+#        key-uri: http://localhost:9999/oauth/token_key
+#    client:
+#      client-id: snapshot
+#      client-secret: snapshot-secret
