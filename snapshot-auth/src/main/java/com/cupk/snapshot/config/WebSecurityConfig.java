@@ -39,6 +39,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable();
         http.formLogin(); // 获取授权码授权页面
         http.authorizeRequests().antMatchers("/sms/code").permitAll();
+        http.authorizeRequests()
+                .antMatchers("/v2/**","/swagger-resources","/webjars/**","/favicon.ico","/doc.html").permitAll();
         http.authorizeRequests().anyRequest().authenticated();
     }
 }

@@ -8,6 +8,11 @@
     <artifactId>snapshot-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.6.RELEASE</version>
+    </parent>
     <modules>
         <module>snapshot-auth</module>
         <module>snapshot-common</module>
@@ -15,6 +20,8 @@
         <module>snapshot-api</module>
         <module>snapshot-admin</module>
         <module>snapshot-file</module>
+        <module>snapshot-doc</module>
+        <module>snapshot-test</module>
     </modules>
 
     <properties>
@@ -26,6 +33,9 @@
         <spring.boot.version>2.3.12.RELEASE</spring.boot.version>
         <mysql.version>8.0.30</mysql.version>
         <druid.version>1.2.16</druid.version>
+        <hutool.version>5.8.15</hutool.version>
+        <knife4j.version>2.0.8</knife4j.version>
+        <swagger.version>1.5.21</swagger.version>
         <mybatis.plus.version>3.5.2</mybatis.plus.version>
     </properties>
 
@@ -45,15 +55,6 @@
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
                 <version>${spring.cloud.alibaba.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
-            <!--spring-boot-dependencies-->
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring.boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -79,14 +80,32 @@
                 <version>${druid.version}</version>
             </dependency>
 
+            <!--knife4j-->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-micro-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+
+            <!--hutool-->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
-        <!--spring boot devtools-->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-models</artifactId>
+            <version>${swagger.version}</version>
         </dependency>
     </dependencies>
 

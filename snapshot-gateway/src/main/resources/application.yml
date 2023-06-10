@@ -1,6 +1,5 @@
 server:
   port: 9527
-
 spring:
   application:
     name: snapshot-gateway
@@ -17,4 +16,6 @@ spring:
     nacos:
       discovery:
         server-addr: 192.168.10.130:8848
+
+
 
