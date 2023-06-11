@@ -17,8 +17,8 @@ public class FileUploader {
             // Create a minioClient with the MinIO server playground, its access key and secret key.
             MinioClient minioClient =
                     MinioClient.builder()
-                            .endpoint("http://192.168.10.130:9000")
-                            .credentials("root", "gty20021112")
+                            .endpoint("http://192.168.174.128:9000")
+                            .credentials("root", "123456")
                             .build();
             // Make 'photo' bucket if not exist.
             boolean found = minioClient.bucketExists(BucketExistsArgs.builder().bucket("photo").build());
