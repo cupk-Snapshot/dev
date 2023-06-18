@@ -1,0 +1,1178 @@
+{
+	"info": {
+		"_postman_id": "fa559392-14e8-406d-bb2e-c966b537a334",
+		"name": "Snapshot Interface",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Oauth2.0 Token",
+			"item": [
+				{
+					"name": "get authorization_code",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/authorize?response_type=code&client_id=snapshot&redirect_uri=https://www.baidu.com&state=state",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"authorize"
+							],
+							"query": [
+								{
+									"key": "response_type",
+									"value": "code"
+								},
+								{
+									"key": "client_id",
+									"value": "snapshot"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "https://www.baidu.com"
+								},
+								{
+									"key": "state",
+									"value": "state"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "auth: authorization_code",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/oauth/token?grant_type=authorization_code&code=ovK6Bd&redirect_uri=https://www.baidu.com&client_id=snapshot&client_secret=snapshot-secret",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"oauth",
+								"token"
+							],
+							"query": [
+								{
+									"key": "grant_type",
+									"value": "authorization_code"
+								},
+								{
+									"key": "code",
+									"value": "ovK6Bd"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "https://www.baidu.com"
+								},
+								{
+									"key": "client_id",
+									"value": "snapshot"
+								},
+								{
+									"key": "client_secret",
+									"value": "snapshot-secret"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get sms_code",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/oauth/sms?phone_num=18187158512",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"oauth",
+								"sms"
+							],
+							"query": [
+								{
+									"key": "phone_num",
+									"value": "18187158512"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "auth: sms_code",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "192.168.10.130:9999/oauth/token?grant_type=sms_code&phone_num=13975641124&sms_code=120971&client_id=snapshot&client_secret=snapshot-secret",
+							"host": [
+								"192",
+								"168",
+								"10",
+								"130"
+							],
+							"port": "9999",
+							"path": [
+								"oauth",
+								"token"
+							],
+							"query": [
+								{
+									"key": "grant_type",
+									"value": "sms_code"
+								},
+								{
+									"key": "phone_num",
+									"value": "13975641124"
+								},
+								{
+									"key": "sms_code",
+									"value": "120971"
+								},
+								{
+									"key": "client_id",
+									"value": "snapshot"
+								},
+								{
+									"key": "client_secret",
+									"value": "snapshot-secret"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "auth: password",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:9955/oauth/token?grant_type=password&username=ad&password=123&client_id=snapshot&client_secret=snapshot-secret",
+							"host": [
+								"localhost"
+							],
+							"port": "9955",
+							"path": [
+								"oauth",
+								"token"
+							],
+							"query": [
+								{
+									"key": "grant_type",
+									"value": "password"
+								},
+								{
+									"key": "username",
+									"value": "ad"
+								},
+								{
+									"key": "password",
+									"value": "123"
+								},
+								{
+									"key": "client_id",
+									"value": "snapshot"
+								},
+								{
+									"key": "client_secret",
+									"value": "snapshot-secret"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refresh token",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/oauth/token?grant_type=refresh_token&refresh_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVcmwiOiJodHRwOi8vaHVhbHVvc2FrdXJhLnRvcC9hdmF0YXIvZm94LmpwZyIsInVzZXJfbmFtZSI6InRlc3QiLCJuaWNrTmFtZSI6IkplcnJ5IiwicGhvbmVOdW0iOiIxMzk3NTY0MTEyNCIsInVzZXJJZCI6MiwiYXV0aG9yaXRpZXMiOlsic2VsZWN0Il0sImNsaWVudF9pZCI6InNuYXBzaG90Iiwic2NvcGUiOlsiYWxsIl0sImlkY2FyZCI6IjQzMDcwMjE5OTAwMzA3MzE3OSIsIm5hbWUiOiLmnY7lm5siLCJleHAiOjE2ODY4Mzg5OTIsImp0aSI6ImI0NzAxNjliLTcxNDYtNGQzNi04M2NhLTcwMDRhMjZlMzg4NCIsInVzZXJuYW1lIjoidGVzdCJ9.ZuB4xLirPKNhXuCISvZsO1nEkpk6w7x-59iQC8KLbGJn-QVcAhokDPoF1AlAOtVOFoZtpUEv1iaExl7mSaxc7YM9inbhLjuYIjvzleXQXIML-Ly6YUnsStakeqr8ESE8tZg4iN1TuvahF1NlIoq-958ZQb5uNEA5fUikv7xuDVk&client_id=snapshot&client_secret=snapshot-secret",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"oauth",
+								"token"
+							],
+							"query": [
+								{
+									"key": "grant_type",
+									"value": "refresh_token"
+								},
+								{
+									"key": "refresh_token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVcmwiOiJodHRwOi8vaHVhbHVvc2FrdXJhLnRvcC9hdmF0YXIvZm94LmpwZyIsInVzZXJfbmFtZSI6InRlc3QiLCJuaWNrTmFtZSI6IkplcnJ5IiwicGhvbmVOdW0iOiIxMzk3NTY0MTEyNCIsInVzZXJJZCI6MiwiYXV0aG9yaXRpZXMiOlsic2VsZWN0Il0sImNsaWVudF9pZCI6InNuYXBzaG90Iiwic2NvcGUiOlsiYWxsIl0sImlkY2FyZCI6IjQzMDcwMjE5OTAwMzA3MzE3OSIsIm5hbWUiOiLmnY7lm5siLCJleHAiOjE2ODY4Mzg5OTIsImp0aSI6ImI0NzAxNjliLTcxNDYtNGQzNi04M2NhLTcwMDRhMjZlMzg4NCIsInVzZXJuYW1lIjoidGVzdCJ9.ZuB4xLirPKNhXuCISvZsO1nEkpk6w7x-59iQC8KLbGJn-QVcAhokDPoF1AlAOtVOFoZtpUEv1iaExl7mSaxc7YM9inbhLjuYIjvzleXQXIML-Ly6YUnsStakeqr8ESE8tZg4iN1TuvahF1NlIoq-958ZQb5uNEA5fUikv7xuDVk"
+								},
+								{
+									"key": "client_id",
+									"value": "snapshot"
+								},
+								{
+									"key": "client_secret",
+									"value": "snapshot-secret"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/oauth/check_token?token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVcmwiOiJodHRwOi8vaHVhbHVvc2FrdXJhLnRvcC9hdmF0YXIvY2F0LmpwZWciLCJ1c2VyX25hbWUiOiJhZG1pbiIsIm5pY2tOYW1lIjoiVG9tIiwicGhvbmVOdW0iOiIxMzk3NTY0MTEyNCIsInVzZXJJZCI6MSwiYXV0aG9yaXRpZXMiOlsiaW5zZXJ0IiwidXBkYXRlIiwic2VsZWN0IiwiZGVsZXRlIl0sImNsaWVudF9pZCI6InNuYXBzaG90Iiwic2NvcGUiOlsiYWxsIl0sImlkY2FyZCI6IjQzMDcwMjE5OTAwMzA3NTI1NCIsIm5hbWUiOiLlvKDkuIkiLCJleHAiOjE2ODY5MTE5MDksImp0aSI6ImYwZWUyZjA5LTEyMDAtNDNjNi05NTE1LWEyNWYwOWY4MTg1YiIsInVzZXJuYW1lIjoiYWRtaW4ifQ.mgQRZxCDepCgZPd1Lenw2XPSqT2A4eCwxPOENk0ApCCz0L7lkXmhA_UhPJDqvhtF8XFgSv5jNu7glmTKI7R0oMJTLSLdQ-Vpux04YAg8SxPWO3Q8M-cuf2uQMRsi9wVoXF9P4YDitIyJbo1rhkZkwwhmf5YRjJPq60qKradvGeU",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"oauth",
+								"check_token"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVcmwiOiJodHRwOi8vaHVhbHVvc2FrdXJhLnRvcC9hdmF0YXIvY2F0LmpwZWciLCJ1c2VyX25hbWUiOiJhZG1pbiIsIm5pY2tOYW1lIjoiVG9tIiwicGhvbmVOdW0iOiIxMzk3NTY0MTEyNCIsInVzZXJJZCI6MSwiYXV0aG9yaXRpZXMiOlsiaW5zZXJ0IiwidXBkYXRlIiwic2VsZWN0IiwiZGVsZXRlIl0sImNsaWVudF9pZCI6InNuYXBzaG90Iiwic2NvcGUiOlsiYWxsIl0sImlkY2FyZCI6IjQzMDcwMjE5OTAwMzA3NTI1NCIsIm5hbWUiOiLlvKDkuIkiLCJleHAiOjE2ODY5MTE5MDksImp0aSI6ImYwZWUyZjA5LTEyMDAtNDNjNi05NTE1LWEyNWYwOWY4MTg1YiIsInVzZXJuYW1lIjoiYWRtaW4ifQ.mgQRZxCDepCgZPd1Lenw2XPSqT2A4eCwxPOENk0ApCCz0L7lkXmhA_UhPJDqvhtF8XFgSv5jNu7glmTKI7R0oMJTLSLdQ-Vpux04YAg8SxPWO3Q8M-cuf2uQMRsi9wVoXF9P4YDitIyJbo1rhkZkwwhmf5YRjJPq60qKradvGeU"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get public key",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/oauth/token_key",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"oauth",
+								"token_key"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User  Apis",
+			"item": [
+				{
+					"name": "Goods Interface",
+					"item": [
+						{
+							"name": "get all",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:9966/user/goods/all",
+									"host": [
+										"localhost"
+									],
+									"port": "9966",
+									"path": [
+										"user",
+										"goods",
+										"all"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Address Interfacce",
+					"item": [
+						{
+							"name": "get all",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/user/address/all/3",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user",
+										"address",
+										"all",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get default",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/user/address/default/2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user",
+										"address",
+										"default",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "user_id",
+											"value": "3",
+											"type": "default"
+										},
+										{
+											"key": "name",
+											"value": "张三",
+											"type": "default"
+										},
+										{
+											"key": "phone_num",
+											"value": "123975641124",
+											"type": "default"
+										},
+										{
+											"key": "area",
+											"value": "湖南省-常德市-武陵区",
+											"type": "default"
+										},
+										{
+											"key": "address",
+											"value": "香格里拉领域",
+											"type": "default"
+										},
+										{
+											"key": "is_default",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/user/address/add",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user",
+										"address",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/user/address/update",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user",
+										"address",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/user/address/delete?user_id=3&address_id=3",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user",
+										"address",
+										"delete"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "3"
+										},
+										{
+											"key": "address_id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Order Interface",
+					"item": [
+						{
+							"name": "get all",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/user/order/all",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user",
+										"order",
+										"all"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "SysUser Interface",
+					"item": [
+						{
+							"name": "get info",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/user/info/2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user",
+										"info",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update passwd",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "user_id",
+											"value": "2",
+											"type": "default"
+										},
+										{
+											"key": "passwd",
+											"value": "1234",
+											"type": "default"
+										},
+										{
+											"key": "new_passwd",
+											"value": "123",
+											"type": "default"
+										},
+										{
+											"key": "repeat",
+											"value": "123",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{token}}/user/update/passwd",
+									"host": [
+										"{{token}}"
+									],
+									"path": [
+										"user",
+										"update",
+										"passwd"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "signout",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/user/signout",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user",
+										"signout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "signup",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "zhangsan",
+											"type": "default"
+										},
+										{
+											"key": "password",
+											"value": "123",
+											"type": "default"
+										},
+										{
+											"key": "phone_num",
+											"value": "13975641124",
+											"type": "default"
+										},
+										{
+											"key": "sms_code",
+											"value": "705690",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/user/signup",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user",
+										"signup"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Points Interface",
+					"item": [
+						{
+							"name": "user points details",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/user/points/2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user",
+										"points",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Report Interface",
+					"item": [
+						{
+							"name": "submit report",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "user_id",
+											"value": "3",
+											"type": "default"
+										},
+										{
+											"key": "hphm",
+											"value": "湘JL2710",
+											"type": "default"
+										},
+										{
+											"key": "address",
+											"value": "火星",
+											"type": "default"
+										},
+										{
+											"key": "type",
+											"value": "违法停车",
+											"type": "default"
+										},
+										{
+											"key": "pic1_url",
+											"value": "test",
+											"type": "default"
+										},
+										{
+											"key": "pic2_url",
+											"value": "",
+											"type": "default"
+										},
+										{
+											"key": "pic3_url",
+											"value": "",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/user/report/submit",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user",
+										"report",
+										"submit"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Admin Apis",
+			"item": [
+				{
+					"name": "Accept Interface",
+					"item": [
+						{
+							"name": "get all page",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/admin/accept/all?current=1&size=10",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"admin",
+										"accept",
+										"all"
+									],
+									"query": [
+										{
+											"key": "current",
+											"value": "1"
+										},
+										{
+											"key": "size",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get all page",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/admin/accept/all?current=1&size=10",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"admin",
+												"accept",
+												"all"
+											],
+											"query": [
+												{
+													"key": "current",
+													"value": "1"
+												},
+												{
+													"key": "size",
+													"value": "10"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "transfer-encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Vary",
+											"value": "Access-Control-Request-Method"
+										},
+										{
+											"key": "Vary",
+											"value": "Access-Control-Request-Headers"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 17 Jun 2023 07:32:31 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"msg\": \"success\",\n    \"data\": {\n        \"list\": [\n            {\n                \"acceptId\": 1,\n                \"reportVo\": {\n                    \"userVo\": {\n                        \"userId\": 2,\n                        \"nickName\": \"Jerry\",\n                        \"avatarUrl\": \"http://hualuosakura.top/avatar/fox.jpg\",\n                        \"username\": \"test\",\n                        \"idcard\": \"430702199003073179\",\n                        \"phoneNum\": \"18473612917\"\n                    },\n                    \"wfTime\": \"2023-06-17 01:10:16\",\n                    \"wfAddress\": \"华美达酒店路口红绿灯\",\n                    \"wfType\": \"闯红灯\",\n                    \"wfDesc\": null,\n                    \"hphm\": \"桂JL2710\",\n                    \"hpzl\": \"蓝底白字\",\n                    \"pic1Url\": \"http://hualuosakura.top/picture/%E6%A1%82JL2710%202023-6-17.jpg\",\n                    \"pic2Url\": null,\n                    \"pic3Url\": null\n                },\n                \"level\": null,\n                \"examineId\": 1,\n                \"examineName\": \"张三\",\n                \"handlerId\": null,\n                \"handlerName\": null,\n                \"isPublic\": 0,\n                \"status\": \"未通过审核\"\n            },\n            {\n                \"acceptId\": 2,\n                \"reportVo\": {\n                    \"userVo\": {\n                        \"userId\": 2,\n                        \"nickName\": \"Jerry\",\n                        \"avatarUrl\": \"http://hualuosakura.top/avatar/fox.jpg\",\n                        \"username\": \"test\",\n                        \"idcard\": \"430702199003073179\",\n                        \"phoneNum\": \"18473612917\"\n                    },\n                    \"wfTime\": \"2023-06-17 01:10:16\",\n                    \"wfAddress\": \"中华园红绿灯路口\",\n                    \"wfType\": \"逆行\",\n                    \"wfDesc\": null,\n                    \"hphm\": \"桂JRN950\",\n                    \"hpzl\": \"蓝底白字\",\n                    \"pic1Url\": \"http://hualuosakura.top/picture/%E6%A1%82JAH090%202023-6-17.jpg\",\n                    \"pic2Url\": null,\n                    \"pic3Url\": null\n                },\n                \"level\": \"严重隐患\",\n                \"examineId\": 1,\n                \"examineName\": \"张三\",\n                \"handlerId\": null,\n                \"handlerName\": null,\n                \"isPublic\": 0,\n                \"status\": \"通过审核\"\n            },\n            {\n                \"acceptId\": 3,\n                \"reportVo\": {\n                    \"userVo\": {\n                        \"userId\": 2,\n                        \"nickName\": \"Jerry\",\n                        \"avatarUrl\": \"http://hualuosakura.top/avatar/fox.jpg\",\n                        \"username\": \"test\",\n                        \"idcard\": \"430702199003073179\",\n                        \"phoneNum\": \"18473612917\"\n                    },\n                    \"wfTime\": \"2023-06-17 01:10:16\",\n                    \"wfAddress\": \"曾屋路二高门口正对面\",\n                    \"wfType\": \"违法停车\",\n                    \"wfDesc\": null,\n                    \"hphm\": \"鄂DGQ031\",\n                    \"hpzl\": \"蓝底白字\",\n                    \"pic1Url\": \"http://hualuosakura.top/picture/%E9%84%82DGQ031%202023-6-17.jpg\",\n                    \"pic2Url\": null,\n                    \"pic3Url\": null\n                },\n                \"level\": null,\n                \"examineId\": null,\n                \"examineName\": null,\n                \"handlerId\": null,\n                \"handlerName\": null,\n                \"isPublic\": 0,\n                \"status\": \"等待审核\"\n            }\n        ],\n        \"current\": 1,\n        \"size\": 10,\n        \"total\": 3,\n        \"pages\": 1,\n        \"hasPrevious\": false,\n        \"hasNext\": false\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "search by condition",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/admin/accept/search?accept_id&status=通过审核&is_public",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"admin",
+										"accept",
+										"search"
+									],
+									"query": [
+										{
+											"key": "accept_id",
+											"value": null
+										},
+										{
+											"key": "status",
+											"value": "通过审核"
+										},
+										{
+											"key": "is_public",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete batch",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[1, 2]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/admin/accept/delete",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"admin",
+										"accept",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "File Apis",
+			"item": [
+				{
+					"name": "Oss Interface",
+					"item": [
+						{
+							"name": "upload file",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/User/Pictures/Saved Pictures/knapsack.png"
+										},
+										{
+											"key": "location",
+											"value": "picture",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/file/oss/upload",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"file",
+										"oss",
+										"upload"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "upload file",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "files",
+													"type": "file",
+													"src": "/C:/Users/User/Pictures/Saved Pictures/knapsack.png"
+												},
+												{
+													"key": "location",
+													"value": "picture",
+													"type": "default"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}/file/oss/upload",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"file",
+												"oss",
+												"upload"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "transfer-encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Vary",
+											"value": "Access-Control-Request-Method"
+										},
+										{
+											"key": "Vary",
+											"value": "Access-Control-Request-Headers"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 17 Jun 2023 17:45:04 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"msg\": \"success\",\n    \"data\": {\n        \"pic1Url\": \"http://hualuosakura.top/picture/81225d5fa4d4417b8c71b1e9a6453cc8knapsack.png\"\n    }\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
