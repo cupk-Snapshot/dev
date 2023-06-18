@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cupk.snapshot.mapper.SysUserMapper">
+
+    <resultMap id="BaseResultMap" type="com.cupk.snapshot.domain.entity.SysUser">
+            <id property="userId" column="user_id" jdbcType="BIGINT"/>
+            <result property="nickName" column="nick_name" jdbcType="VARCHAR"/>
+            <result property="avatarUrl" column="avatar_url" jdbcType="VARCHAR"/>
+            <result property="username" column="username" jdbcType="VARCHAR"/>
+            <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="idcard" column="idcard" jdbcType="VARCHAR"/>
+            <result property="phoneNum" column="phone_num" jdbcType="VARCHAR"/>
+            <result property="isAccountnonExpired" column="is_accountNon_expired" jdbcType="INTEGER"/>
+            <result property="isAccountnonLocked" column="is_accountNon_locked" jdbcType="INTEGER"/>
+            <result property="isCredentialsnonExpired" column="is_credentialsNon_expired" jdbcType="INTEGER"/>
+            <result property="isEnabled" column="is_enabled" jdbcType="INTEGER"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="isDeleted" column="is_deleted" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        user_id,nick_name,avatar_url,
+        username,password,name,
+        idcard,phone_num,is_accountNon_expired,
+        is_accountNon_locked,is_credentialsNon_expired,is_enabled,
+        create_time,update_time,is_deleted
+    </sql>
+
+    <select id="selectRoleIdById" resultType="java.lang.Long">
+        SELECT ur.`role_id`
+        FROM sys_user u
+                 LEFT JOIN sys_user_role ur ON u.`user_id` = ur.`user_id`
+        WHERE u.`user_id` = #{id}
+    </select>
+
+    <select id="selectAuthoritiesByRoleId" resultType="java.lang.String">
+        SELECT DISTINCT m.`menu_name`
+        FROM sys_role_menu rm
+                 LEFT JOIN sys_menu m ON rm.`menu_id` = m.`menu_id`
+        WHERE rm.`role_id` = #{roleId};
+    </select>
+</mapper>

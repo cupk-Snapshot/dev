@@ -54,7 +54,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     public TokenEnhancer tokenEnhancer() {
         return (accessToken, authentication) -> {
             User user = (User) authentication.getPrincipal();
-            Map<String, Object> additionalInfo = BeanUtil.beanToMap(user.getUserVo(), new HashMap<>(), false, true);
+            Map<String, Object> additionalInfo = BeanUtil.beanToMap(user.getUserVo(), new HashMap<>(), false, false);
             ((DefaultOAuth2AccessToken) accessToken).setAdditionalInformation(additionalInfo);
             return accessToken;
         };

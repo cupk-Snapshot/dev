@@ -1,7 +1,8 @@
 package com.cupk.snapshot.service.impl;
 
 import cn.hutool.core.util.RandomUtil;
-import cn.hutool.db.nosql.redis.RedisDS;
+import com.cupk.snapshot.exception.RedisException;
+import com.cupk.snapshot.utils.RedisUtils;
 import com.tencentcloudapi.common.Credential;
 import com.tencentcloudapi.common.exception.TencentCloudSDKException;
 import com.tencentcloudapi.sms.v20210111.SmsClient;
@@ -9,19 +10,24 @@ import com.tencentcloudapi.sms.v20210111.models.SendSmsRequest;
 import com.tencentcloudapi.sms.v20210111.models.SendSmsResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Service;
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.params.SetParams;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * 腾讯云短信服务
  * Create by Guo Tianyou on 2023/6/8.
  */
+@RefreshScope
 @Service
 public class SmsServiceImpl {
-
     private static final Logger log = LoggerFactory.getLogger(SmsServiceImpl.class);
+
+    @Autowired
+    private RedisUtils redisUtils;
 
     /*
      * 访问管理-API密钥管理
@@ -96,9 +102,13 @@ public class SmsServiceImpl {
 
         // 将验证码存入Redis缓存
         if (code.equals("Ok")) {
-            Jedis jedis = RedisDS.create().getJedis();
-            jedis.set("code:"+phoneNum, smsCode, new SetParams().ex(300));
+            try {
+                redisUtils.set("code:"+phoneNum, smsCode, 5, TimeUnit.MINUTES);
+            } catch (Exception e) {
+                throw new RedisException("redis连接失败");
+            }
         }
+
     }
 
 }

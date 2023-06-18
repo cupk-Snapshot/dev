@@ -2,9 +2,9 @@ package com.cupk.snapshot.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.cupk.snapshot.domain.entity.SysUser;
 import com.cupk.snapshot.domain.model.User;
 import com.cupk.snapshot.domain.model.vo.UserVo;
-import com.cupk.snapshot.model.domain.entity.SysUser;
 import com.cupk.snapshot.mapper.SysUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -23,6 +23,7 @@ import java.util.Set;
  */
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
+
     @Autowired
     private SysUserMapper sysUserMapper;
 
@@ -36,16 +37,16 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
         SysUser sysUser = sysUserMapper.selectOne(new LambdaQueryWrapper<SysUser>()
-                .eq(SysUser::getUserName, s)
-                .or().eq(SysUser::getPhone, s));
+                .eq(SysUser::getUsername, s)
+                .or().eq(SysUser::getPhoneNum, s));
         if (!ObjectUtils.isEmpty(sysUser)) {
             // 查询用户权限信息
             Set<SimpleGrantedAuthority> authorities = new HashSet<>();
-            sysUserMapper.selectAuthoritiesByRoleId(sysUserMapper.selectRoleIdById(sysUser.getId()))
+            sysUserMapper.selectAuthoritiesByRoleId(sysUserMapper.selectRoleIdById(sysUser.getUserId()))
                     .forEach(i -> authorities.add(new SimpleGrantedAuthority(i)));
             // 封装UserVo类
             UserVo userVo = BeanUtil.toBean(sysUser, UserVo.class);
-            return new User(authorities, sysUser.getPassWord(), sysUser.getUserName(), userVo);
+            return new User(authorities, sysUser.getPassword(), sysUser.getUsername(), userVo);
         }
         throw new UsernameNotFoundException("用户名或手机号未注册");
     }

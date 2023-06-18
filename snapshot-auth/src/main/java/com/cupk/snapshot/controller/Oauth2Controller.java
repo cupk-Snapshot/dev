@@ -1,9 +1,7 @@
 package com.cupk.snapshot.controller;
 
-import com.cupk.snapshot.model.domain.R;
+import com.cupk.snapshot.domain.R;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.AccessDeniedException;
-import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.springframework.security.oauth2.provider.endpoint.AuthorizationEndpoint;
 import org.springframework.security.oauth2.provider.endpoint.CheckTokenEndpoint;
@@ -72,7 +70,9 @@ public class Oauth2Controller {
                 put("access_token", oAuth2AccessToken.getValue());
                 put("refresh_token", oAuth2AccessToken.getRefreshToken().getValue());
                 put("expires_in", oAuth2AccessToken.getExpiresIn());
-                put("user", oAuth2AccessToken.getAdditionalInformation());
+                Map<String, Object> additionalInformation = oAuth2AccessToken.getAdditionalInformation();
+                additionalInformation.remove("jti");
+                put("user", additionalInformation);
             }
         };
         return R.success(map);
@@ -81,7 +81,7 @@ public class Oauth2Controller {
     /**
      * 校验AccessToken
      */
-    @RequestMapping(value = "/check_token")
+    @PostMapping(value = "/check_token")
     @ResponseBody
     public R checkToken(@RequestParam("token") String value) {
         Map<String, ?> map = checkTokenEndpoint.checkToken(value);
@@ -89,18 +89,22 @@ public class Oauth2Controller {
     }
 
     /**
-     * 获取授权码
+     * 获取非对称加密公钥
      */
-    @RequestMapping(value = "/authorize")
-    public ModelAndView authorize(Map<String, Object> model, @RequestParam Map<String, String> parameters,
-                                  SessionStatus sessionStatus, Principal principal) {
-        return authorizationEndpoint.authorize(model, parameters, sessionStatus, principal);
-    }
-
     @GetMapping("/token_key")
     @ResponseBody
     public R getKey(Principal principal) {
         Map<String, String> map = tokenKeyEndpoint.getKey(principal);
         return R.success(map);
     }
+
+    /**
+     * 获取授权码
+     */
+    @GetMapping(value = "/oauth/authorize")
+    public ModelAndView authorize(Map<String, Object> model, @RequestParam Map<String, String> parameters,
+                                  SessionStatus sessionStatus, Principal principal) {
+        return authorizationEndpoint.authorize(model, parameters, sessionStatus, principal);
+    }
+
 }

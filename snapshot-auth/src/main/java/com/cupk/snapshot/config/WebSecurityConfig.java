@@ -1,6 +1,6 @@
 package com.cupk.snapshot.config;
 
-import com.cupk.snapshot.security.SmsAuthenticationProvider;
+import com.cupk.snapshot.security.sms.SmsAuthenticationProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -38,9 +38,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable();
         http.formLogin(); // 获取授权码授权页面
-        http.authorizeRequests().antMatchers("/sms/code").permitAll();
-        http.authorizeRequests()
-                .antMatchers("/v2/**","/swagger-resources","/webjars/**","/favicon.ico","/doc.html").permitAll();
+        http.authorizeRequests().antMatchers("/oauth/sms").permitAll();
         http.authorizeRequests().anyRequest().authenticated();
     }
 }

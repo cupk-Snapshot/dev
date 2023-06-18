@@ -1,0 +1,14 @@
+server:
+  port: 9977
+  servlet:
+    context-path: /admin
+spring:
+  application:
+    name: snapshot-admin-api
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 82.156.156.143:8848
+      config:
+        server-addr: 82.156.156.143:8848
+        file-extension: yaml

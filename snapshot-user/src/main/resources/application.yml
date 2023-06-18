@@ -1,0 +1,49 @@
+spring:
+  profiles:
+    active: test
+
+#server:
+#  port: 9966
+#  servlet:
+#    context-path: /user
+#spring:
+#  application:
+#    name: snapshot-user-api
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 192.168.10.130:8848
+#  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://192.168.10.130:3306/snapshot_db?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false
+#    username: root
+#    password: gty20021112
+#  redis:
+#    database: 0
+#    host: 192.168.10.130
+#    password: gty20021112
+#    port: 6379
+#    timeout: 0
+#    jedis:
+#      pool:
+#        max-active: 8
+#        max-idle: 8
+#        min-idle: 0
+#        max-wait: -1
+#  jackson:
+#    date-format: yyyy-MM-dd HH:mm:ss
+#    time-zone: GMT+8
+#mybatis-plus:
+#  mapper-locations: classpath:/mapper/*.xml
+#  type-aliases-package: com.gty.oauth2.entity
+#  configuration:
+#    map-underscore-to-camel-case: true
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#  global-config:
+#    db-config:
+#      id-type: auto
+#      logic-delete-field: isDeleted
+#      logic-not-delete-value: 0
+#      logic-delete-value: 1
+

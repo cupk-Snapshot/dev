@@ -1,6 +1,6 @@
 package com.cupk.snapshot.config.granter;
 
-import com.cupk.snapshot.security.SmsAuthenticationToken;
+import com.cupk.snapshot.security.sms.SmsAuthenticationToken;
 import org.springframework.security.authentication.*;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.oauth2.provider.*;

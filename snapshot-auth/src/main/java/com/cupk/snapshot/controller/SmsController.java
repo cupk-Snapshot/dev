@@ -1,21 +1,18 @@
 package com.cupk.snapshot.controller;
 
 import cn.hutool.core.util.ReUtil;
-import com.cupk.snapshot.model.domain.R;
+import com.cupk.snapshot.domain.R;
 import com.cupk.snapshot.service.impl.SmsServiceImpl;
 import com.tencentcloudapi.common.exception.TencentCloudSDKException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * 短信验证码接口
  * Created by Guo Tianyou on 2023/6/8.
  */
 @RestController
-@RequestMapping("/sms")
+@RequestMapping("/oauth")
 public class SmsController {
 
     /**
@@ -26,7 +23,7 @@ public class SmsController {
     @Autowired
     private SmsServiceImpl smsServiceImpl;
 
-    @PostMapping("/code")
+    @GetMapping("/sms")
     public R sendSms(@RequestParam("phone_num") String phoneNum) throws TencentCloudSDKException {
         if (!ReUtil.isMatch(PHONE_REG, phoneNum)) {
             return R.error("手机号格式错误");

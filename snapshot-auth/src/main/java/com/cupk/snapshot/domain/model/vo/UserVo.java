@@ -7,42 +7,41 @@ import java.io.Serializable;
  */
 public class UserVo implements Serializable {
     private static final long serialVersionUID = 1L;
-
-    private Long id;
-    private String userName;
+    private Long userId;
+    private String username;
     private String nickName;
-    private Integer sex;
-    private String phone;
-    private String email;
-    private String avatar;
+    private String avatarUrl;
+    private String name;
+    private String idcard;
+    private String phoneNum;
 
     @Override
     public String toString() {
         return "UserVo{" +
-                "id=" + id +
-                ", userName='" + userName + '\'' +
+                "userId=" + userId +
+                ", username='" + username + '\'' +
                 ", nickName='" + nickName + '\'' +
-                ", sex=" + sex +
-                ", phone='" + phone + '\'' +
-                ", email='" + email + '\'' +
-                ", avatar='" + avatar + '\'' +
+                ", avatarUrl='" + avatarUrl + '\'' +
+                ", name='" + name + '\'' +
+                ", idcard='" + idcard + '\'' +
+                ", phoneNum='" + phoneNum + '\'' +
                 '}';
     }
 
-    public Long getId() {
-        return id;
+    public Long getUserId() {
+        return userId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getNickName() {
@@ -53,35 +52,35 @@ public class UserVo implements Serializable {
         this.nickName = nickName;
     }
 
-    public Integer getSex() {
-        return sex;
+    public String getAvatarUrl() {
+        return avatarUrl;
     }
 
-    public void setSex(Integer sex) {
-        this.sex = sex;
+    public void setAvatarUrl(String avatarUrl) {
+        this.avatarUrl = avatarUrl;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getName() {
+        return name;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getEmail() {
-        return email;
+    public String getIdcard() {
+        return idcard;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setIdcard(String idcard) {
+        this.idcard = idcard;
     }
 
-    public String getAvatar() {
-        return avatar;
+    public String getPhoneNum() {
+        return phoneNum;
     }
 
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
+    public void setPhoneNum(String phoneNum) {
+        this.phoneNum = phoneNum;
     }
 }

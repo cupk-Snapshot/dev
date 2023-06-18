@@ -8,21 +8,21 @@
     <artifactId>snapshot-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.6.RELEASE</version>
-    </parent>
+
     <modules>
         <module>snapshot-auth</module>
         <module>snapshot-common</module>
         <module>snapshot-gateway</module>
-        <module>snapshot-api</module>
-        <module>snapshot-admin</module>
         <module>snapshot-file</module>
-        <module>snapshot-doc</module>
-        <module>snapshot-test</module>
+        <module>snapshot-user</module>
+        <module>snapshot-admin</module>
     </modules>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.12.RELEASE</version>
+    </parent>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -30,12 +30,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.cloud.version>Hoxton.SR12</spring.cloud.version>
         <spring.cloud.alibaba.version>2.2.7.RELEASE</spring.cloud.alibaba.version>
-        <spring.boot.version>2.3.12.RELEASE</spring.boot.version>
+<!--        <spring.boot.version>2.3.12.RELEASE</spring.boot.version>-->
         <mysql.version>8.0.30</mysql.version>
         <druid.version>1.2.16</druid.version>
         <hutool.version>5.8.15</hutool.version>
-        <knife4j.version>2.0.8</knife4j.version>
-        <swagger.version>1.5.21</swagger.version>
         <mybatis.plus.version>3.5.2</mybatis.plus.version>
     </properties>
 
@@ -59,6 +57,15 @@
                 <scope>import</scope>
             </dependency>
 
+<!--            &lt;!&ndash;spring-boot-dependencies&ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-dependencies</artifactId>-->
+<!--                <version>${spring.boot.version}</version>-->
+<!--                <type>pom</type>-->
+<!--                <scope>import</scope>-->
+<!--            </dependency>-->
+
             <!--mybatis plus-->
             <dependency>
                 <groupId>com.baomidou</groupId>
@@ -80,18 +87,6 @@
                 <version>${druid.version}</version>
             </dependency>
 
-            <!--knife4j-->
-            <dependency>
-                <groupId>com.github.xiaoymin</groupId>
-                <artifactId>knife4j-micro-spring-boot-starter</artifactId>
-                <version>${knife4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.xiaoymin</groupId>
-                <artifactId>knife4j-spring-boot-starter</artifactId>
-                <version>${knife4j.version}</version>
-            </dependency>
-
             <!--hutool-->
             <dependency>
                 <groupId>cn.hutool</groupId>
@@ -100,22 +95,5 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <dependencies>
-        <dependency>
-            <groupId>io.swagger</groupId>
-            <artifactId>swagger-models</artifactId>
-            <version>${swagger.version}</version>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
