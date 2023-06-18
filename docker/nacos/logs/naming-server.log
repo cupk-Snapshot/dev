@@ -1,0 +1,260 @@
+2023-06-15 00:16:21,266 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2023-06-15 00:16:21,266 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2023-06-15 00:16:21,267 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2023-06-15 00:16:21,267 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2023-06-15 00:16:22,136 INFO Load instance extension handler []
+
+2023-06-15 00:16:30,639 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2023-06-15 00:16:30,671 WARN [NamingServerHttpClientManager] Destruction of the end
+
+2023-06-15 00:18:19,699 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2023-06-15 00:18:19,699 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2023-06-15 00:18:19,699 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2023-06-15 00:18:19,699 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2023-06-15 00:18:20,380 INFO Load instance extension handler []
+
+2023-06-15 00:18:54,477 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2023-06-15 00:18:54,485 WARN [NamingServerHttpClientManager] Destruction of the end
+
+2023-06-15 00:30:39,347 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2023-06-15 00:30:39,347 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2023-06-15 00:30:39,348 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2023-06-15 00:30:39,348 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2023-06-15 00:30:40,387 INFO Load instance extension handler []
+
+2023-06-15 00:30:44,053 INFO Client connection 1686760243915_172.21.0.5_54152 connect
+
+2023-06-15 00:30:45,594 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=0}, 1686760243915_172.21.0.5_54152
+
+2023-06-15 00:33:45,985 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, 1686760243915_172.21.0.5_54152
+
+2023-06-15 00:33:46,301 INFO Client connection 1686760243915_172.21.0.5_54152 disconnect, remove instances and subscribers
+
+2023-06-15 00:33:46,912 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2023-06-15 00:33:46,926 WARN [NamingServerHttpClientManager] Destruction of the end
+
+2023-06-15 00:38:04,065 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2023-06-15 00:38:04,065 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2023-06-15 00:38:04,065 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2023-06-15 00:38:04,065 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2023-06-15 00:38:06,375 INFO Load instance extension handler []
+
+2023-06-15 00:38:31,432 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2023-06-15 00:38:31,440 WARN [NamingServerHttpClientManager] Destruction of the end
+
+2023-06-15 00:39:17,606 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2023-06-15 00:39:17,606 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2023-06-15 00:39:17,614 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2023-06-15 00:39:17,615 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2023-06-15 00:39:19,145 INFO Load instance extension handler []
+
+2023-06-15 00:39:22,162 INFO Client connection 1686760762105_172.23.0.5_45584 connect
+
+2023-06-15 00:39:22,303 INFO Client connection 1686760762105_172.23.0.5_45584 disconnect, remove instances and subscribers
+
+2023-06-15 00:41:49,551 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2023-06-15 00:41:49,576 WARN [NamingServerHttpClientManager] Destruction of the end
+
+2023-06-15 00:42:01,651 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2023-06-15 00:42:01,652 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2023-06-15 00:42:01,653 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2023-06-15 00:42:01,653 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2023-06-15 00:42:03,227 INFO Load instance extension handler []
+
+2023-06-15 00:42:06,065 INFO Client connection 1686760926003_172.23.0.5_60070 connect
+
+2023-06-15 00:42:06,451 INFO Client connection 1686760926003_172.23.0.5_60070 disconnect, remove instances and subscribers
+
+2023-06-15 00:47:22,427 INFO Client connection 1686761242337_172.23.0.5_50796 connect
+
+2023-06-15 00:47:24,817 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=0}, 1686761242337_172.23.0.5_50796
+
+2023-06-15 00:48:27,475 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, 1686761242337_172.23.0.5_50796
+
+2023-06-15 00:48:27,798 INFO Client connection 1686761242337_172.23.0.5_50796 disconnect, remove instances and subscribers
+
+2023-06-15 00:48:28,425 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2023-06-15 00:48:28,440 WARN [NamingServerHttpClientManager] Destruction of the end
+
+2023-06-15 00:49:03,029 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2023-06-15 00:49:03,029 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2023-06-15 00:49:03,032 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2023-06-15 00:49:03,032 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2023-06-15 00:49:04,614 INFO Load instance extension handler []
+
+2023-06-15 00:49:27,512 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2023-06-15 00:49:27,518 WARN [NamingServerHttpClientManager] Destruction of the end
+
+2023-06-15 00:49:50,437 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2023-06-15 00:49:50,437 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2023-06-15 00:49:50,438 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2023-06-15 00:49:50,438 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2023-06-15 00:49:51,983 INFO Load instance extension handler []
+
+2023-06-15 00:49:56,003 INFO Client connection 1686761395944_172.25.0.5_46268 connect
+
+2023-06-15 00:49:56,393 INFO Client connection 1686761395944_172.25.0.5_46268 disconnect, remove instances and subscribers
+
+2023-06-15 00:50:28,136 INFO Client connection 1686761428037_172.25.0.5_56126 connect
+
+2023-06-15 00:50:29,470 INFO Client connection 1686761428037_172.25.0.5_56126 disconnect, remove instances and subscribers
+
+2023-06-15 00:50:29,711 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2023-06-15 00:50:29,727 WARN [NamingServerHttpClientManager] Destruction of the end
+
+2023-06-15 00:51:25,351 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2023-06-15 00:51:25,351 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2023-06-15 00:51:25,352 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2023-06-15 00:51:25,352 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2023-06-15 00:51:26,980 INFO Load instance extension handler []
+
+2023-06-15 00:51:29,448 INFO Client connection 1686761489372_172.26.0.5_33768 connect
+
+2023-06-15 00:51:29,815 INFO Client connection 1686761489372_172.26.0.5_33768 disconnect, remove instances and subscribers
+
+2023-06-15 00:51:35,623 INFO Client connection 1686761495540_172.26.0.5_38214 connect
+
+2023-06-15 00:51:38,073 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=0}, 1686761495540_172.26.0.5_38214
+
+2023-06-15 00:52:26,270 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, 1686761495540_172.26.0.5_38214
+
+2023-06-15 00:52:26,587 INFO Client connection 1686761495540_172.26.0.5_38214 disconnect, remove instances and subscribers
+
+2023-06-15 00:52:27,233 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2023-06-15 00:52:27,242 WARN [NamingServerHttpClientManager] Destruction of the end
+
+2023-06-15 00:56:39,105 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2023-06-15 00:56:39,107 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2023-06-15 00:56:39,108 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2023-06-15 00:56:39,108 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2023-06-15 00:56:40,369 INFO Load instance extension handler []
+
+2023-06-15 00:56:42,983 INFO Client connection 1686761802894_172.27.0.5_36886 connect
+
+2023-06-15 00:56:43,526 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=0}, 1686761802894_172.27.0.5_36886
+
+2023-06-15 00:56:43,728 INFO Client connection 1686761802894_172.27.0.5_36886 disconnect, remove instances and subscribers
+
+2023-06-15 00:56:49,482 INFO Client connection 1686761809393_172.27.0.5_49060 connect
+
+2023-06-15 00:56:51,857 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=2}, 1686761809393_172.27.0.5_49060
+
+2023-06-15 01:03:17,013 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=3}, 1686761809393_172.27.0.5_49060
+
+2023-06-15 01:03:17,336 INFO Client connection 1686761809393_172.27.0.5_49060 disconnect, remove instances and subscribers
+
+2023-06-15 01:03:17,963 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2023-06-15 01:03:17,974 WARN [NamingServerHttpClientManager] Destruction of the end
+
+2023-06-15 01:03:52,895 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2023-06-15 01:03:52,895 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2023-06-15 01:03:52,896 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2023-06-15 01:03:52,896 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2023-06-15 01:03:54,284 INFO Load instance extension handler []
+
+2023-06-15 01:03:56,661 INFO Client connection 1686762236588_172.28.0.5_36972 connect
+
+2023-06-15 01:03:57,134 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=0}, 1686762236588_172.28.0.5_36972
+
+2023-06-15 01:03:57,569 INFO Client connection 1686762236588_172.28.0.5_36972 disconnect, remove instances and subscribers
+
+2023-06-15 01:04:02,834 INFO Client connection 1686762242743_172.28.0.5_36974 connect
+
+2023-06-15 01:04:05,220 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=2}, 1686762242743_172.28.0.5_36974
+
+2023-06-15 01:04:29,987 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=3}, 1686762242743_172.28.0.5_36974
+
+2023-06-15 01:04:30,305 INFO Client connection 1686762242743_172.28.0.5_36974 disconnect, remove instances and subscribers
+
+2023-06-15 01:04:30,919 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2023-06-15 01:04:30,948 WARN [NamingServerHttpClientManager] Destruction of the end
+
+2023-06-15 01:05:55,566 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2023-06-15 01:05:55,566 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2023-06-15 01:05:55,567 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2023-06-15 01:05:55,567 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2023-06-15 01:05:58,307 INFO Load instance extension handler []
+
+2023-06-15 01:06:10,388 INFO Client connection 1686762370193_172.29.0.1_36194 connect
+
+2023-06-15 01:06:11,668 INFO Client connection 1686762371534_172.29.0.5_51036 connect
+
+2023-06-15 01:06:12,556 INFO Client connection 1686762370193_172.29.0.1_36194 disconnect, remove instances and subscribers
+
+2023-06-15 01:06:16,264 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=0}, 1686762371534_172.29.0.5_51036
+
+2023-06-15 01:06:19,627 INFO Client connection 1686762379534_172.29.0.1_38336 connect
+
+2023-06-15 01:06:23,359 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-user-api', ephemeral=true, revision=0}, 1686762379534_172.29.0.1_38336
+
+2023-06-15 01:09:42,513 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-user-api', ephemeral=true, revision=1}, 1686762379534_172.29.0.1_38336
+
+2023-06-15 01:09:42,834 INFO Client connection 1686762379534_172.29.0.1_38336 disconnect, remove instances and subscribers
+
+2023-06-15 01:09:43,495 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, 1686762371534_172.29.0.5_51036
+
+2023-06-15 01:09:43,823 INFO Client connection 1686762371534_172.29.0.5_51036 disconnect, remove instances and subscribers
+
+2023-06-15 01:09:44,441 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2023-06-15 01:09:44,449 WARN [NamingServerHttpClientManager] Destruction of the end
+

@@ -1,0 +1,68 @@
+version: "3.8"
+networks:
+  cloud:
+    driver: bridge
+services:
+  mysql:
+    container_name: mysql
+    image: mysql:5.7.40
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: gty20021112
+    volumes:
+      - "./mysql/conf:/etc/mysql/conf.d"
+      - "./mysql/data:/var/lib/mysql"
+      - "./mysql/log:/var/log/mysql"
+    networks:
+      - cloud
+  redis:
+    container_name: redis
+    image: redis:7.0.5
+    ports:
+      - "6379:6379"
+    volumes:
+      - "./redis/conf:/usr/local/etc/redis"
+      - "./redis/data:/data"
+    command: redis-server /usr/local/etc/redis/redis.conf
+    networks:
+      - cloud
+  nacos:
+    container_name: nacos
+    image: nacos/nacos-server:v2.2.3
+    ports:
+      - "8848:8848"
+      - "9848:9848"
+      - "9849:9849"
+    env_file:
+      - "./nacos/env/nacos-standlone-mysql.env"
+    volumes:
+      - "./nacos/logs:/home/nacos/logs"
+      - "./nacos/conf:/home/nacos/conf"
+    networks:
+      - cloud
+    depends_on:
+      - mysql
+    restart: on-failure
+  ssp-auth:
+    container_name: ssp-auth
+    build: ../snapshot-auth/Dockerfile
+    ports:
+      - "9999:9999"
+    networks:
+      - cloud
+    depends_on:
+      - mysql
+      - nacos
+    restart: on-failure
+  ssp-user:
+    container_name: ssp-user
+    build: ../snapshot-user/Dockerfile
+    ports:
+      - "9966:9966"
+    networks:
+      - cloud
+    depends_on:
+      - nacos
+      - ssp-auth
+    restart: on-failure

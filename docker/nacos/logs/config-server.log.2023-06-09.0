@@ -1,0 +1,150 @@
+2023-06-09 19:53:52,330 INFO notifyConnectTimeout:100
+
+2023-06-09 19:53:52,354 INFO notifySocketTimeout:200
+
+2023-06-09 19:53:52,354 INFO isHealthCheck:true
+
+2023-06-09 19:53:52,354 INFO maxHealthCheckFailCount:12
+
+2023-06-09 19:53:52,355 INFO maxContent:10485760
+
+2023-06-09 19:54:07,781 WARN DumpService start
+
+2023-06-09 19:54:07,783 INFO start clear all config-info.
+
+2023-06-09 19:54:07,786 WARN clear all config-info failed.
+
+2023-06-09 19:54:07,786 WARN clear all config-info-tenant failed.
+
+2023-06-09 19:54:07,802 INFO start clear all config-info-beta.
+
+2023-06-09 19:54:07,802 WARN clear all config-info-beta failed.
+
+2023-06-09 19:54:07,802 WARN clear all config-info-beta-tenant failed.
+
+2023-06-09 19:54:07,806 INFO start clear all config-info-tag.
+
+2023-06-09 19:54:07,806 WARN clear all config-info-tag failed.
+
+2023-06-09 19:54:07,806 WARN clear all config-info-tag-tenant failed.
+
+2023-06-09 20:17:58,203 INFO notifyConnectTimeout:100
+
+2023-06-09 20:17:58,226 INFO notifySocketTimeout:200
+
+2023-06-09 20:17:58,237 INFO isHealthCheck:true
+
+2023-06-09 20:17:58,237 INFO maxHealthCheckFailCount:12
+
+2023-06-09 20:17:58,237 INFO maxContent:10485760
+
+2023-06-09 20:18:11,038 WARN DumpService start
+
+2023-06-09 20:18:11,040 INFO start clear all config-info.
+
+2023-06-09 20:18:11,042 WARN clear all config-info failed.
+
+2023-06-09 20:18:11,043 WARN clear all config-info-tenant failed.
+
+2023-06-09 20:18:11,065 INFO start clear all config-info-beta.
+
+2023-06-09 20:18:11,065 WARN clear all config-info-beta failed.
+
+2023-06-09 20:18:11,065 WARN clear all config-info-beta-tenant failed.
+
+2023-06-09 20:18:11,071 INFO start clear all config-info-tag.
+
+2023-06-09 20:18:11,072 WARN clear all config-info-tag failed.
+
+2023-06-09 20:18:11,072 WARN clear all config-info-tag-tenant failed.
+
+2023-06-09 20:30:46,890 INFO notifyConnectTimeout:100
+
+2023-06-09 20:30:46,911 INFO notifySocketTimeout:200
+
+2023-06-09 20:30:46,911 INFO isHealthCheck:true
+
+2023-06-09 20:30:46,911 INFO maxHealthCheckFailCount:12
+
+2023-06-09 20:30:46,911 INFO maxContent:10485760
+
+2023-06-09 20:30:58,633 WARN DumpService start
+
+2023-06-09 20:30:58,634 INFO start clear all config-info.
+
+2023-06-09 20:30:58,636 WARN clear all config-info failed.
+
+2023-06-09 20:30:58,636 WARN clear all config-info-tenant failed.
+
+2023-06-09 20:30:58,649 INFO start clear all config-info-beta.
+
+2023-06-09 20:30:58,649 WARN clear all config-info-beta failed.
+
+2023-06-09 20:30:58,650 WARN clear all config-info-beta-tenant failed.
+
+2023-06-09 20:30:58,652 INFO start clear all config-info-tag.
+
+2023-06-09 20:30:58,652 WARN clear all config-info-tag failed.
+
+2023-06-09 20:30:58,652 WARN clear all config-info-tag-tenant failed.
+
+2023-06-09 20:41:36,097 INFO notifyConnectTimeout:100
+
+2023-06-09 20:41:36,101 INFO notifySocketTimeout:200
+
+2023-06-09 20:41:36,101 INFO isHealthCheck:true
+
+2023-06-09 20:41:36,101 INFO maxHealthCheckFailCount:12
+
+2023-06-09 20:41:36,101 INFO maxContent:10485760
+
+2023-06-09 20:41:42,441 WARN DumpService start
+
+2023-06-09 20:41:42,443 INFO start clear all config-info.
+
+2023-06-09 20:41:42,444 WARN clear all config-info failed.
+
+2023-06-09 20:41:42,444 WARN clear all config-info-tenant failed.
+
+2023-06-09 20:41:42,452 INFO start clear all config-info-beta.
+
+2023-06-09 20:41:42,452 WARN clear all config-info-beta failed.
+
+2023-06-09 20:41:42,453 WARN clear all config-info-beta-tenant failed.
+
+2023-06-09 20:41:42,455 INFO start clear all config-info-tag.
+
+2023-06-09 20:41:42,455 WARN clear all config-info-tag failed.
+
+2023-06-09 20:41:42,455 WARN clear all config-info-tag-tenant failed.
+
+2023-06-09 22:20:17,526 INFO notifyConnectTimeout:100
+
+2023-06-09 22:20:17,530 INFO notifySocketTimeout:200
+
+2023-06-09 22:20:17,531 INFO isHealthCheck:true
+
+2023-06-09 22:20:17,532 INFO maxHealthCheckFailCount:12
+
+2023-06-09 22:20:17,533 INFO maxContent:10485760
+
+2023-06-09 22:20:24,370 WARN DumpService start
+
+2023-06-09 22:20:24,371 INFO start clear all config-info.
+
+2023-06-09 22:20:24,372 WARN clear all config-info failed.
+
+2023-06-09 22:20:24,373 WARN clear all config-info-tenant failed.
+
+2023-06-09 22:20:24,381 INFO start clear all config-info-beta.
+
+2023-06-09 22:20:24,382 WARN clear all config-info-beta failed.
+
+2023-06-09 22:20:24,382 WARN clear all config-info-beta-tenant failed.
+
+2023-06-09 22:20:24,385 INFO start clear all config-info-tag.
+
+2023-06-09 22:20:24,385 WARN clear all config-info-tag failed.
+
+2023-06-09 22:20:24,385 WARN clear all config-info-tag-tenant failed.
+

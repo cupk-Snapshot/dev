@@ -1,0 +1,46 @@
+2023-06-10 01:07:39,739 INFO shutdown jraft server
+
+2023-06-10 01:07:39,745 INFO ========= The raft protocol is starting to close =========
+
+2023-06-10 01:07:39,949 INFO ========= The raft protocol has been closed =========
+
+2023-06-10 11:56:34,071 INFO Initializes the Raft protocol, raft-config info : {}
+
+2023-06-10 11:56:34,294 INFO ========= The raft protocol is starting... =========
+
+2023-06-10 11:56:34,322 INFO ========= The raft protocol start finished... =========
+
+2023-06-10 11:56:34,336 INFO create raft group : naming_persistent_service_v2
+
+2023-06-10 11:56:34,794 INFO This Raft event changes : RaftEvent{groupId='naming_persistent_service_v2', leader='172.18.0.4:7848', term=1, raftClusterInfo=[172.18.0.4:7848]}
+
+2023-06-10 11:56:34,822 INFO create raft group : naming_instance_metadata
+
+2023-06-10 11:56:34,906 INFO This Raft event changes : RaftEvent{groupId='naming_instance_metadata', leader='172.18.0.4:7848', term=1, raftClusterInfo=[172.18.0.4:7848]}
+
+2023-06-10 11:56:34,920 INFO create raft group : naming_service_metadata
+
+2023-06-10 11:56:35,081 INFO This Raft event changes : RaftEvent{groupId='naming_service_metadata', leader='172.18.0.4:7848', term=1, raftClusterInfo=[172.18.0.4:7848]}
+
+2023-06-10 12:02:17,949 INFO shutdown jraft server
+
+2023-06-10 12:02:17,950 INFO ========= The raft protocol is starting to close =========
+
+2023-06-10 12:02:18,341 INFO ========= The raft protocol has been closed =========
+
+2023-06-10 13:40:08,589 INFO Initializes the Raft protocol, raft-config info : {}
+
+2023-06-10 13:40:08,882 INFO ========= The raft protocol is starting... =========
+
+2023-06-10 13:40:08,915 INFO ========= The raft protocol start finished... =========
+
+2023-06-10 13:40:08,941 INFO create raft group : naming_persistent_service_v2
+
+2023-06-10 13:40:09,415 INFO This Raft event changes : RaftEvent{groupId='naming_persistent_service_v2', leader='172.18.0.4:7848', term=1, raftClusterInfo=[172.18.0.4:7848]}
+
+2023-06-10 13:40:09,444 INFO create raft group : naming_instance_metadata
+
+2023-06-10 13:40:09,598 INFO create raft group : naming_service_metadata
+
+2023-06-10 13:40:09,673 INFO This Raft event changes : RaftEvent{groupId='naming_service_metadata', leader='172.18.0.4:7848', term=1, raftClusterInfo=[172.18.0.4:7848]}
+

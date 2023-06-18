@@ -1,0 +1,347 @@
+2023-06-10 11:57:03,497 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}
+
+2023-06-10 11:57:03,966 INFO [PUSH-SUCC] 41ms, all delay time 581ms, SLA 469ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.151.164.161
+
+2023-06-10 11:57:22,461 INFO [PUSH-SUCC] 18ms, all delay time 528ms for subscriber 10.151.164.161, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2023-06-10 11:57:24,447 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=1}
+
+2023-06-10 11:57:24,962 INFO [PUSH-SUCC] 9ms, all delay time 555ms, SLA 515ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.151.164.161
+
+2023-06-10 15:14:17,531 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}
+
+2023-06-10 15:14:18,086 INFO [PUSH-SUCC] 38ms, all delay time 620ms, SLA 554ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 15:14:38,041 INFO [PUSH-SUCC] 14ms, all delay time 599ms for subscriber 10.161.107.182, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2023-06-10 15:14:40,016 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=1}
+
+2023-06-10 15:14:40,545 INFO [PUSH-SUCC] 7ms, all delay time 557ms, SLA 529ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 15:29:43,398 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}
+
+2023-06-10 15:29:43,921 INFO [PUSH-SUCC] 22ms, all delay time 569ms, SLA 523ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 15:30:05,712 INFO [PUSH-SUCC] 13ms, all delay time 539ms for subscriber 10.161.107.182, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2023-06-10 15:30:47,991 INFO [PUSH-SUCC] 14ms, all delay time 573ms for subscriber 10.161.107.182, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2023-06-10 15:32:52,210 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=3}
+
+2023-06-10 15:32:52,734 INFO [PUSH-SUCC] 19ms, all delay time 573ms, SLA 524ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 15:33:07,694 INFO [PUSH-SUCC] 14ms, all delay time 515ms for subscriber 10.161.107.182, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=3}, originalSize=1, DataSize=1
+
+2023-06-10 17:25:08,363 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}
+
+2023-06-10 17:25:08,749 INFO [PUSH-SUCC] 20ms, all delay time 535ms, SLA 386ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 17:28:33,221 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=3}
+
+2023-06-10 17:28:33,649 INFO [PUSH-SUCC] 20ms, all delay time 579ms, SLA 428ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 17:47:06,260 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}
+
+2023-06-10 17:47:06,633 INFO [PUSH-SUCC] 20ms, all delay time 528ms, SLA 373ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 17:47:10,138 INFO [PUSH-SUCC] 11ms, all delay time 524ms, SLA 524ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=2}, originalSize=0, DataSize=0, target=10.161.107.182
+
+2023-06-10 17:53:00,188 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}
+
+2023-06-10 17:53:00,646 INFO [PUSH-SUCC] 19ms, all delay time 608ms, SLA 458ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 17:53:03,052 INFO [PUSH-SUCC] 13ms, all delay time 523ms, SLA 523ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=2}, originalSize=0, DataSize=0, target=10.161.107.182
+
+2023-06-10 17:59:38,531 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}
+
+2023-06-10 17:59:39,016 INFO [PUSH-SUCC] 33ms, all delay time 566ms, SLA 485ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 18:05:41,791 INFO [PUSH-SUCC] 20ms, all delay time 531ms for subscriber 10.161.107.182, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2023-06-10 18:06:39,882 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}
+
+2023-06-10 18:06:40,339 INFO [PUSH-SUCC] 20ms, all delay time 558ms, SLA 457ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 18:09:10,974 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=3}
+
+2023-06-10 18:09:11,498 INFO [PUSH-SUCC] 19ms, all delay time 606ms, SLA 524ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 18:10:50,471 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=5}
+
+2023-06-10 18:10:50,926 INFO [PUSH-SUCC] 19ms, all delay time 536ms, SLA 455ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=5}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 18:13:32,030 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=7}
+
+2023-06-10 18:13:32,506 INFO [PUSH-SUCC] 21ms, all delay time 556ms, SLA 476ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=7}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 18:15:31,480 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=9}
+
+2023-06-10 18:15:31,921 INFO [PUSH-SUCC] 19ms, all delay time 590ms, SLA 441ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=9}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 18:17:27,611 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=11}
+
+2023-06-10 18:17:28,006 INFO [PUSH-SUCC] 19ms, all delay time 544ms, SLA 395ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=11}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 18:20:29,915 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}
+
+2023-06-10 18:20:30,392 INFO [PUSH-SUCC] 22ms, all delay time 560ms, SLA 477ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 18:24:37,176 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}
+
+2023-06-10 18:24:37,658 INFO [PUSH-SUCC] 22ms, all delay time 562ms, SLA 482ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 18:33:34,366 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}
+
+2023-06-10 18:33:34,803 INFO [PUSH-SUCC] 26ms, all delay time 538ms, SLA 437ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 18:43:28,179 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}
+
+2023-06-10 18:43:28,624 INFO [PUSH-SUCC] 20ms, all delay time 536ms, SLA 445ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 18:57:20,817 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}
+
+2023-06-10 18:57:21,350 INFO [PUSH-SUCC] 20ms, all delay time 617ms, SLA 533ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 19:03:21,346 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=3}
+
+2023-06-10 19:03:21,883 INFO [PUSH-SUCC] 25ms, all delay time 608ms, SLA 537ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 19:04:43,654 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=5}
+
+2023-06-10 19:04:44,129 INFO [PUSH-SUCC] 19ms, all delay time 556ms, SLA 475ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=5}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 19:07:17,065 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=7}
+
+2023-06-10 19:07:17,496 INFO [PUSH-SUCC] 19ms, all delay time 588ms, SLA 431ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=7}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 19:08:05,429 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=9}
+
+2023-06-10 19:08:05,819 INFO [PUSH-SUCC] 19ms, all delay time 541ms, SLA 390ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=9}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 19:08:32,262 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=11}
+
+2023-06-10 19:08:32,632 INFO [PUSH-SUCC] 20ms, all delay time 529ms, SLA 370ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=11}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 19:09:10,748 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=13}
+
+2023-06-10 19:09:11,201 INFO [PUSH-SUCC] 21ms, all delay time 606ms, SLA 453ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=13}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 19:09:59,379 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=15}
+
+2023-06-10 19:09:59,826 INFO [PUSH-SUCC] 20ms, all delay time 596ms, SLA 447ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=15}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 19:10:53,279 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=17}
+
+2023-06-10 19:10:53,658 INFO [PUSH-SUCC] 18ms, all delay time 540ms, SLA 379ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=17}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 19:13:07,633 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}
+
+2023-06-10 19:13:08,017 INFO [PUSH-SUCC] 25ms, all delay time 547ms, SLA 385ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 19:14:37,588 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=3}
+
+2023-06-10 19:14:38,003 INFO [PUSH-SUCC] 21ms, all delay time 576ms, SLA 415ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 19:17:20,307 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}
+
+2023-06-10 19:17:20,785 INFO [PUSH-SUCC] 20ms, all delay time 538ms, SLA 478ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 19:17:35,546 INFO [PUSH-SUCC] 16ms, all delay time 566ms for subscriber 10.161.107.182, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2023-06-10 19:17:37,526 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=1}
+
+2023-06-10 19:17:37,947 INFO [PUSH-SUCC] 8ms, all delay time 528ms, SLA 421ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 19:19:23,596 INFO [PUSH-SUCC] 4ms, all delay time 546ms for subscriber 10.161.107.182, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2023-06-10 19:19:24,615 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=3}
+
+2023-06-10 19:19:25,106 INFO [PUSH-SUCC] 6ms, all delay time 523ms, SLA 491ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 19:26:11,887 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=5}
+
+2023-06-10 19:26:12,414 INFO [PUSH-SUCC] 6ms, all delay time 556ms, SLA 527ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=5}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 19:26:39,728 INFO [PUSH-SUCC] 4ms, all delay time 597ms for subscriber 10.161.107.182, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2023-06-10 19:26:40,659 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=7}
+
+2023-06-10 19:26:41,235 INFO [PUSH-SUCC] 5ms, all delay time 604ms, SLA 577ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=7}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 21:14:57,248 INFO [PUSH-SUCC] 4ms, all delay time 539ms for subscriber 10.161.107.182, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2023-06-10 21:14:58,338 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=9}
+
+2023-06-10 21:14:58,854 INFO [PUSH-SUCC] 4ms, all delay time 580ms, SLA 516ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=9}, originalSize=1, DataSize=1, target=10.161.107.182
+
+2023-06-10 21:53:19,022 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}
+
+2023-06-10 21:53:19,632 INFO [PUSH-SUCC] 161ms, all delay time 671ms, SLA 610ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 21:53:52,518 INFO [PUSH-SUCC] 19ms, all delay time 545ms for subscriber 10.161.102.184, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2023-06-10 21:54:44,015 INFO [PUSH-SUCC] 16ms, all delay time 602ms for subscriber 10.161.102.184, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2023-06-10 21:57:38,924 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=3}
+
+2023-06-10 21:57:39,338 INFO [PUSH-SUCC] 30ms, all delay time 581ms, SLA 414ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 21:58:00,915 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=5}
+
+2023-06-10 21:58:01,303 INFO [PUSH-SUCC] 19ms, all delay time 611ms, SLA 388ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=5}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 21:58:33,245 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=7}
+
+2023-06-10 21:58:33,725 INFO [PUSH-SUCC] 7ms, all delay time 533ms, SLA 480ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=7}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 21:59:08,359 INFO [PUSH-SUCC] 16ms, all delay time 547ms for subscriber 10.161.102.184, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=7}, originalSize=1, DataSize=1
+
+2023-06-10 21:59:10,336 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=1}
+
+2023-06-10 21:59:10,760 INFO [PUSH-SUCC] 8ms, all delay time 549ms, SLA 424ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:02:13,063 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}
+
+2023-06-10 22:02:13,438 INFO [PUSH-SUCC] 21ms, all delay time 537ms, SLA 375ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:03:45,857 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=3}
+
+2023-06-10 22:03:46,278 INFO [PUSH-SUCC] 20ms, all delay time 584ms, SLA 421ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:05:51,532 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}
+
+2023-06-10 22:05:51,886 INFO [PUSH-SUCC] 20ms, all delay time 570ms, SLA 354ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:06:09,959 INFO [PUSH-SUCC] 15ms, all delay time 531ms for subscriber 10.161.102.184, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2023-06-10 22:06:11,981 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=1}
+
+2023-06-10 22:06:12,463 INFO [PUSH-SUCC] 9ms, all delay time 590ms, SLA 482ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:11:13,669 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=3}
+
+2023-06-10 22:11:14,166 INFO [PUSH-SUCC] 10ms, all delay time 534ms, SLA 497ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:11:54,912 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=3}
+
+2023-06-10 22:11:55,263 INFO [PUSH-SUCC] 19ms, all delay time 561ms, SLA 351ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:12:18,306 INFO [PUSH-SUCC] 16ms, all delay time 584ms for subscriber 10.161.102.184, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=3}, originalSize=1, DataSize=1
+
+2023-06-10 22:12:20,276 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=5}
+
+2023-06-10 22:12:20,721 INFO [PUSH-SUCC] 11ms, all delay time 553ms, SLA 445ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=5}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:13:42,687 INFO [PUSH-SUCC] 4ms, all delay time 564ms for subscriber 10.161.102.184, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=3}, originalSize=1, DataSize=1
+
+2023-06-10 22:13:43,782 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=7}
+
+2023-06-10 22:13:44,268 INFO [PUSH-SUCC] 6ms, all delay time 518ms, SLA 486ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=7}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:18:09,867 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=5}
+
+2023-06-10 22:18:10,264 INFO [PUSH-SUCC] 19ms, all delay time 610ms, SLA 397ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=5}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:19:08,457 INFO [PUSH-SUCC] 17ms, all delay time 556ms for subscriber 10.161.102.184, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=5}, originalSize=1, DataSize=1
+
+2023-06-10 22:19:10,410 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=9}
+
+2023-06-10 22:19:10,896 INFO [PUSH-SUCC] 8ms, all delay time 593ms, SLA 486ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=9}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:22:46,407 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}
+
+2023-06-10 22:22:46,763 INFO [PUSH-SUCC] 20ms, all delay time 561ms, SLA 356ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:23:06,752 INFO [PUSH-SUCC] 15ms, all delay time 520ms for subscriber 10.161.102.184, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2023-06-10 22:24:10,424 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=3}
+
+2023-06-10 22:24:10,808 INFO [PUSH-SUCC] 21ms, all delay time 589ms, SLA 384ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:24:26,473 INFO [PUSH-SUCC] 15ms, all delay time 611ms for subscriber 10.161.102.184, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=3}, originalSize=1, DataSize=1
+
+2023-06-10 22:26:01,162 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=5}
+
+2023-06-10 22:26:06,474 ERROR [PUSH-FAIL] 5002ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=6}, reason=Timeout After 5000 milliseconds,requestId =74, target=10.161.102.184
+
+2023-06-10 22:26:06,478 ERROR Reason detail: 
+
+java.util.concurrent.TimeoutException: Timeout After 5000 milliseconds,requestId =74
+	at com.alibaba.nacos.api.remote.DefaultRequestFuture$TimeoutHandler.run(DefaultRequestFuture.java:194)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2023-06-10 22:26:38,187 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=7}
+
+2023-06-10 22:26:38,553 INFO [PUSH-SUCC] 22ms, all delay time 578ms, SLA 366ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=7}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:26:53,434 INFO [PUSH-SUCC] 16ms, all delay time 517ms for subscriber 10.161.102.184, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=7}, originalSize=1, DataSize=1
+
+2023-06-10 22:29:15,464 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=9}
+
+2023-06-10 22:29:15,994 INFO [PUSH-SUCC] 17ms, all delay time 590ms, SLA 530ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=9}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:29:59,075 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=11}
+
+2023-06-10 22:29:59,446 INFO [PUSH-SUCC] 20ms, all delay time 576ms, SLA 371ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=11}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:31:31,770 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=13}
+
+2023-06-10 22:31:32,280 INFO [PUSH-SUCC] 20ms, all delay time 615ms, SLA 510ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=13}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:31:32,853 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}
+
+2023-06-10 22:31:33,185 INFO [PUSH-SUCC] 20ms, all delay time 550ms, SLA 332ms, Service{namespace='public', group='DEFAULT_GROUP', name='service-user', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:31:37,104 INFO [PUSH-SUCC] 20ms, all delay time 592ms for subscriber 10.161.102.184, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=13}, originalSize=1, DataSize=1
+
+2023-06-10 22:32:03,744 INFO [PUSH-SUCC] 46ms, all delay time 613ms for subscriber 10.161.102.184, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=13}, originalSize=1, DataSize=1
+
+2023-06-10 22:33:48,186 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=15}
+
+2023-06-10 22:33:48,659 INFO [PUSH-SUCC] 19ms, all delay time 534ms, SLA 473ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=15}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:35:02,656 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=17}
+
+2023-06-10 22:35:03,160 INFO [PUSH-SUCC] 5ms, all delay time 519ms, SLA 504ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=17}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:37:11,020 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=19}
+
+2023-06-10 22:37:11,542 INFO [PUSH-SUCC] 20ms, all delay time 582ms, SLA 522ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=19}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:38:22,414 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=21}
+
+2023-06-10 22:38:22,880 INFO [PUSH-SUCC] 20ms, all delay time 526ms, SLA 466ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=21}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:38:42,176 INFO [PUSH-SUCC] 16ms, all delay time 565ms for subscriber 10.161.102.184, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=21}, originalSize=1, DataSize=1
+
+2023-06-10 22:39:25,245 INFO [PUSH-SUCC] 15ms, all delay time 537ms for subscriber 10.161.102.184, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=21}, originalSize=1, DataSize=1
+
+2023-06-10 22:39:27,132 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=1}
+
+2023-06-10 22:39:27,547 INFO [PUSH-SUCC] 8ms, all delay time 527ms, SLA 415ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:41:09,205 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=23}
+
+2023-06-10 22:41:09,605 INFO [PUSH-SUCC] 19ms, all delay time 605ms, SLA 400ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=23}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:42:56,869 INFO [PUSH-SUCC] 15ms, all delay time 592ms for subscriber 10.161.102.184, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=23}, originalSize=1, DataSize=1
+
+2023-06-10 22:42:58,700 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=1}
+
+2023-06-10 22:42:59,197 INFO [PUSH-SUCC] 8ms, all delay time 604ms, SLA 497ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:44:07,628 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=25}
+
+2023-06-10 22:44:07,989 INFO [PUSH-SUCC] 20ms, all delay time 572ms, SLA 361ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=25}, originalSize=1, DataSize=1, target=10.161.102.184
+
+2023-06-10 22:44:29,832 INFO [PUSH-SUCC] 19ms, all delay time 610ms for subscriber 10.161.102.184, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=25}, originalSize=1, DataSize=1
+
+2023-06-10 22:44:31,751 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=3}
+
+2023-06-10 22:44:32,174 INFO [PUSH-SUCC] 6ms, all delay time 533ms, SLA 422ms, Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=10.161.102.184
+

@@ -1,0 +1,129 @@
+2023-06-09 19:54:10,917 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2023-06-09 19:54:10,918 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2023-06-09 19:54:10,920 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2023-06-09 19:54:10,920 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2023-06-09 19:54:13,616 INFO Load instance extension handler []
+
+2023-06-09 20:18:13,512 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2023-06-09 20:18:13,513 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2023-06-09 20:18:13,515 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2023-06-09 20:18:13,515 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2023-06-09 20:18:16,198 INFO Load instance extension handler []
+
+2023-06-09 20:18:37,958 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2023-06-09 20:18:38,030 WARN [NamingServerHttpClientManager] Destruction of the end
+
+2023-06-09 20:18:38,269 ERROR [HEALTH-CHECK-V2] error while processing NIO task
+
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.processTask(TcpHealthCheckProcessor.java:122)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.run(TcpHealthCheckProcessor.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2023-06-09 20:31:01,413 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2023-06-09 20:31:01,413 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2023-06-09 20:31:01,415 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2023-06-09 20:31:01,415 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2023-06-09 20:31:04,761 INFO Load instance extension handler []
+
+2023-06-09 20:33:27,659 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2023-06-09 20:33:27,777 WARN [NamingServerHttpClientManager] Destruction of the end
+
+2023-06-09 20:33:28,015 ERROR [HEALTH-CHECK-V2] error while processing NIO task
+
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.processTask(TcpHealthCheckProcessor.java:122)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.run(TcpHealthCheckProcessor.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2023-06-09 20:41:43,483 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2023-06-09 20:41:43,483 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2023-06-09 20:41:43,484 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2023-06-09 20:41:43,484 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2023-06-09 20:41:45,009 INFO Load instance extension handler []
+
+2023-06-09 20:47:28,314 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2023-06-09 20:47:28,329 WARN [NamingServerHttpClientManager] Destruction of the end
+
+2023-06-09 20:47:28,667 ERROR [HEALTH-CHECK-V2] error while processing NIO task
+
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.processTask(TcpHealthCheckProcessor.java:122)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.run(TcpHealthCheckProcessor.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2023-06-09 22:20:25,437 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2023-06-09 22:20:25,438 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2023-06-09 22:20:25,439 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2023-06-09 22:20:25,439 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2023-06-09 22:20:26,679 INFO Load instance extension handler []
+
+2023-06-09 22:21:26,909 INFO Client connection 1686320486703_192.168.10.1_61503 connect
+
+2023-06-09 22:21:29,110 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=0}, 1686320486703_192.168.10.1_61503
+
+2023-06-09 22:22:10,053 INFO Client connection 1686320529973_192.168.10.1_61594 connect
+
+2023-06-09 22:22:12,452 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=0}, 1686320529973_192.168.10.1_61594
+
+2023-06-09 22:22:36,435 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=1}, 1686320529973_192.168.10.1_61594
+
+2023-06-09 22:22:36,751 INFO Client connection 1686320529973_192.168.10.1_61594 disconnect, remove instances and subscribers
+
+2023-06-09 22:23:26,970 INFO Client connection 1686320606883_192.168.10.1_61701 connect
+
+2023-06-09 22:23:29,301 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=2}, 1686320606883_192.168.10.1_61701
+
+2023-06-09 22:30:30,636 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, 1686320486703_192.168.10.1_61503
+
+2023-06-09 22:30:30,658 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-api', ephemeral=true, revision=3}, 1686320606883_192.168.10.1_61701
+
+2023-06-09 22:30:30,951 INFO Client connection 1686320486703_192.168.10.1_61503 disconnect, remove instances and subscribers
+
+2023-06-09 22:30:30,971 INFO Client connection 1686320606883_192.168.10.1_61701 disconnect, remove instances and subscribers
+
+2023-06-09 22:31:56,249 WARN namespace : public, [DEFAULT_GROUP@@snapshot-api] services are automatically cleaned
+
+2023-06-09 22:31:56,249 WARN namespace : public, [DEFAULT_GROUP@@snapshot-oauth2-server] services are automatically cleaned
+
