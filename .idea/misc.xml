@@ -10,6 +10,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/snapshot-media/pom.xml" />
+        <option value="$PROJECT_DIR$/snapshot-test/pom.xml" />
         <option value="$PROJECT_DIR$/snapshot-vue/pom.xml" />
       </set>
     </option>
