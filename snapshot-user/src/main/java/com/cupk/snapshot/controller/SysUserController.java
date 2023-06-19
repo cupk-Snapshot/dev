@@ -52,8 +52,8 @@ public class SysUserController {
     /**
      * 查询当前登录用户信息
      */
-    @GetMapping("/info/{user_id}")
-    public R info(@PathVariable("user_id") Long userId) {
+    @GetMapping("/info")
+    public R info(@RequestParam("user_id") Long userId) {
         SysUser sysUser = sysUserService.getOne(
                 new LambdaQueryWrapper<SysUser>().eq(SysUser::getUserId, userId)
         );
@@ -76,12 +76,28 @@ public class SysUserController {
             return R.error("确认新密码与新密码输入不一致");
         }
         LambdaUpdateWrapper<SysUser> updateWrapper = new LambdaUpdateWrapper<>();
-        updateWrapper.set(SysUser::getPassword, bCryptPasswordEncoder.encode(newPasswd));
+        updateWrapper.set(SysUser::getPassword, bCryptPasswordEncoder.encode(newPasswd)).eq(SysUser::getUserId, userId);
         sysUserService.update(updateWrapper);
 
         // 清除redis中的token信息
         logout();
         return R.success();
+    }
+
+    /**
+     * 修改个人信息
+     */
+    @PostMapping("/update/info")
+    public R updateInfo(@RequestParam("user_id") Long userId, @RequestParam("nick_name") String nickName,
+                        @RequestParam("phone_num") String phoneNum, @RequestParam("name") String name) {
+        LambdaUpdateWrapper<SysUser> updateWrapper = new LambdaUpdateWrapper<>();
+        updateWrapper
+                .set(!StringUtils.isEmpty(nickName), SysUser::getNickName, nickName)
+                .set(!StringUtils.isEmpty(phoneNum), SysUser::getPhoneNum, phoneNum)
+                .set(!StringUtils.isEmpty(name), SysUser::getName, name)
+                .eq(SysUser::getUserId, userId);
+        sysUserService.update(updateWrapper);
+        return R.success("修改成功");
     }
 
     /**

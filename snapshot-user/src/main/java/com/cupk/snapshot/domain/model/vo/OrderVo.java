@@ -10,10 +10,14 @@ public class OrderVo  implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private Long orderId;
+    //商品图片
     private String picUrl;
+    //商品描述
     private String title;
-    private Integer point;
+
     private String name;
+    private Integer point;
+
     private Date createTime;
     private AddressVo addressVo;
 

@@ -42,7 +42,7 @@ public class QiniuUtils {
      * @link {https://developer.qiniu.com/kodo/1239/java}
      */
     public Map<String, Object> uploadFile(InputStream inputStream, String fileName, String location) {
-        Configuration cfg = new Configuration(Region.xinjiapo());
+        Configuration cfg = new Configuration(Region.huabei());
         cfg.resumableUploadAPIVersion = Configuration.ResumableUploadAPIVersion.V2;
         UploadManager uploadManager = new UploadManager(cfg);
 
@@ -59,7 +59,7 @@ public class QiniuUtils {
              * my domain name: http://hualuosakura.top/
              */
             HashMap<String, Object> result = new HashMap<>();
-            result.put("link", "http://hualuosakura.top/" + putRet.key);
+            result.put("link", "http://rwfye2iaw.hb-bkt.clouddn.com/" + putRet.key);
             result.put("fileName", putRet.key);
             return result;
         } catch (QiniuException ex) {

@@ -12,8 +12,8 @@ public class UserVo implements Serializable {
     private String nickName;
     private String avatarUrl;
     private String username;
-    private String idcard;
     private String phoneNum;
+    private String name;
 
     public UserVo() {
     }
@@ -25,8 +25,8 @@ public class UserVo implements Serializable {
                 ", nickName='" + nickName + '\'' +
                 ", avatarUrl='" + avatarUrl + '\'' +
                 ", username='" + username + '\'' +
-                ", idcard='" + idcard + '\'' +
                 ", phoneNum='" + phoneNum + '\'' +
+                ", name='" + name + '\'' +
                 '}';
     }
 
@@ -62,13 +62,6 @@ public class UserVo implements Serializable {
         this.username = username;
     }
 
-    public String getIdcard() {
-        return idcard;
-    }
-
-    public void setIdcard(String idcard) {
-        this.idcard = idcard;
-    }
 
     public String getPhoneNum() {
         return phoneNum;
@@ -76,5 +69,13 @@ public class UserVo implements Serializable {
 
     public void setPhoneNum(String phoneNum) {
         this.phoneNum = phoneNum;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
