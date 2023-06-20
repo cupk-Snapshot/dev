@@ -25,4 +25,11 @@
         handler_name,is_public,status,
         create_time,update_time,is_deleted
     </sql>
+
+
+    <select id="getTotalAccept" resultType="java.lang.Integer">
+        SELECT COUNT(*)
+        FROM wfssp_accept
+        WHERE `status` = '等待审核'
+    </select>
 </mapper>

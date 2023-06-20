@@ -63,6 +63,16 @@ public class Points implements Serializable {
     @TableField(value = "is_deleted")
     private Integer isDeleted;
 
+    public Points() {
+    }
+
+    public Points(Long userId, String description, Integer exchange, Integer balance) {
+        this.userId = userId;
+        this.description = description;
+        this.exchange = exchange;
+        this.balance = balance;
+    }
+
     @Override
     public String toString() {
         return "Points{" +

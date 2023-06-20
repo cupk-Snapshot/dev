@@ -10,10 +10,7 @@ import com.cupk.snapshot.domain.model.vo.GoodsVo;
 import com.cupk.snapshot.service.GoodsService;
 import com.cupk.snapshot.service.PointsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,7 +50,7 @@ public class GoodsController {
     /**
      * 兑换商品
      */
-    @GetMapping("/buy")
+    @PostMapping("/buy")
     public R buy(@RequestParam("user_id") Long userId, @RequestParam("goods_id") Long goodsId,
                  @RequestParam("address_id") Long addressId) {
         Goods goods = goodsService.getOne(new LambdaQueryWrapper<Goods>().eq(Goods::getGoodsId, goodsId));
@@ -64,14 +61,20 @@ public class GoodsController {
         if (totalPoints < goods.getPoint()) {
             return R.error("积分不足");
         }
+        // 生成订单记录
+        orderController.add(goodsId, userId, addressId);
         // 库存数量减1
         LambdaUpdateWrapper<Goods> updateWrapper = new LambdaUpdateWrapper<>();
         updateWrapper.set(Goods::getStocks, goods.getStocks() - 1);
         goodsService.update(updateWrapper);
-        // 生成订单记录
-        orderController.add(goodsId, userId, addressId);
-
-        return R.success();
+        // 修改用户积分
+        Points points = new Points(userId, "兑换商品" + goods.getTitle(), (-goods.getPoint()), totalPoints - goods.getPoint());
+        boolean flag = pointsService.save(points);
+        if (flag) {
+            return R.success("兑换成功");
+        }else {
+            return R.success("兑换失败");
+        }
     }
 
 

@@ -1,6 +1,9 @@
 package com.cupk.snapshot.controller;
 
 import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.date.DateUnit;
+import cn.hutool.core.date.DateUtil;
+import cn.hutool.core.util.RandomUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.cupk.snapshot.domain.R;
 import com.cupk.snapshot.domain.entity.Address;
@@ -17,10 +20,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by Guo Tianyou on 2023/6/14.
@@ -50,7 +50,12 @@ public class OrderController {
         SysUser sysUser = sysUserService.getOne(
                 new LambdaQueryWrapper<SysUser>().eq(SysUser::getUserId, userId)
         );
-        Order order = new Order(goodsId, userId, sysUser.getName(), sysUser.getPhoneNum(), addressId);
+
+        String now = DateUtil.now();
+        String str = now.replaceAll("-", "").replaceAll(" ", "").replaceAll(":", "") + userId;
+        Long orderId = Long.valueOf(str);
+
+        Order order = new Order(orderId, goodsId, userId, sysUser.getNickName(), sysUser.getPhoneNum(), addressId);
         orderService.save(order);
         return R.success();
     }

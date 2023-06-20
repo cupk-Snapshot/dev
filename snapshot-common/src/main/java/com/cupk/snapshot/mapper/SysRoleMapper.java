@@ -2,7 +2,10 @@ package com.cupk.snapshot.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.cupk.snapshot.domain.entity.SysRole;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 /**
 * @author User
@@ -12,6 +15,8 @@ import org.springframework.stereotype.Repository;
 */
 @Repository
 public interface SysRoleMapper extends BaseMapper<SysRole> {
+
+    SysRole getSysRole(@Param("userId") Long userId);
 
 }
 

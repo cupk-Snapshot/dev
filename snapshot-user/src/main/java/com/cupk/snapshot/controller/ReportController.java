@@ -1,11 +1,18 @@
 package com.cupk.snapshot.controller;
 
+import cn.hutool.core.bean.BeanUtil;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.cupk.snapshot.domain.R;
+import com.cupk.snapshot.domain.entity.Accept;
 import com.cupk.snapshot.domain.entity.Report;
+import com.cupk.snapshot.domain.model.vo.MyReportVo;
+import com.cupk.snapshot.service.AcceptService;
 import com.cupk.snapshot.service.ReportService;
+import org.checkerframework.checker.units.qual.A;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,10 +25,33 @@ public class ReportController {
     @Autowired
     private ReportService reportService;
 
+    @Autowired
+    private AcceptService acceptService;
 
+
+    /**
+     * 我的举报信息
+     */
     @GetMapping("/all")
-    public List<Report> getAll() {
-        return reportService.list();
+    public R getAll(@RequestParam("user_id") Long userId) {
+        List<Report> reports = reportService.list(
+                new LambdaQueryWrapper<Report>().eq(Report::getUserId, userId));
+        List<MyReportVo> res = new ArrayList<>();
+
+//        List<Accept> list = acceptService.list();
+
+        for (Report report : reports) {
+            Accept accept = acceptService.getOne(
+                    new LambdaQueryWrapper<Accept>().eq(Accept::getReportId, report.getReportId()));
+
+            MyReportVo myReportVo = BeanUtil.toBean(report, MyReportVo.class);
+            myReportVo.setStatus(accept.getStatus());
+
+            res.add(myReportVo);
+        }
+
+
+        return R.success(res);
     }
 
     @PostMapping("/submit")

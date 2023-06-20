@@ -82,6 +82,15 @@ public class Order implements Serializable {
         this.addressId = addressId;
     }
 
+    public Order(Long orderId, Long goodsId, Long userId, String name, String phoneNum, Long addressId) {
+        this.orderId = orderId;
+        this.goodsId = goodsId;
+        this.userId = userId;
+        this.name = name;
+        this.phoneNum = phoneNum;
+        this.addressId = addressId;
+    }
+
     @Override
     public String toString() {
         return "Order{" +

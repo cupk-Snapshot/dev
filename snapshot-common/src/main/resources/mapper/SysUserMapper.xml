@@ -43,4 +43,9 @@
                  LEFT JOIN sys_menu m ON rm.`menu_id` = m.`menu_id`
         WHERE rm.`role_id` = #{roleId};
     </select>
+
+    <select id="getTotalUser" resultType="java.lang.Integer">
+        SELECT COUNT(*)
+        FROM sys_user
+    </select>
 </mapper>

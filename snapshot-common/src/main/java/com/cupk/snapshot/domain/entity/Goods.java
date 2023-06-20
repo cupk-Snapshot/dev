@@ -63,6 +63,16 @@ public class Goods implements Serializable {
     @TableField(value = "is_deleted")
     private Integer isDeleted;
 
+    public Goods() {
+    }
+
+    public Goods(String title, String picUrl, Integer point, Integer stocks) {
+        this.title = title;
+        this.picUrl = picUrl;
+        this.point = point;
+        this.stocks = stocks;
+    }
+
     @Override
     public String toString() {
         return "Goods{" +

@@ -13,6 +13,10 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface AcceptMapper extends BaseMapper<Accept> {
 
+    /**
+     * 获取未处理举报数
+     */
+    Integer getTotalAccept();
 }
 
 

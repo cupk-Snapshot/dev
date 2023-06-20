@@ -31,6 +31,10 @@ public interface SysUserMapper extends BaseMapper<SysUser> {
     Set<String> selectAuthoritiesByRoleId(@Param("roleId") Long roleId);
 
 
+    /**
+     * 获取系统总用户数
+     */
+    Integer getTotalUser();
 }
 
 

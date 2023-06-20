@@ -1,8 +1,10 @@
 package com.cupk.snapshot.config;
 
 import cn.hutool.core.bean.BeanUtil;
+import com.cupk.snapshot.domain.entity.SysRole;
 import com.cupk.snapshot.domain.model.User;
 import com.cupk.snapshot.config.granter.SmsTokenGranter;
+import com.cupk.snapshot.mapper.SysRoleMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -42,6 +44,9 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     @Autowired
     private DataSource dataSource;
 
+    @Autowired
+    private SysRoleMapper sysRoleMapper;
+
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
@@ -54,7 +59,10 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     public TokenEnhancer tokenEnhancer() {
         return (accessToken, authentication) -> {
             User user = (User) authentication.getPrincipal();
+            //获取用户角色信息
+            SysRole sysRole = sysRoleMapper.getSysRole(user.getUserVo().getUserId());
             Map<String, Object> additionalInfo = BeanUtil.beanToMap(user.getUserVo(), new HashMap<>(), false, false);
+            additionalInfo.put("role", sysRole.getRoleCode());
             ((DefaultOAuth2AccessToken) accessToken).setAdditionalInformation(additionalInfo);
             return accessToken;
         };

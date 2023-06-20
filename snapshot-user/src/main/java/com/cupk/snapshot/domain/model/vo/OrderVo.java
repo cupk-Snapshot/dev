@@ -15,7 +15,7 @@ public class OrderVo  implements Serializable {
     //商品描述
     private String title;
 
-    private String name;
+    private String nickName;
     private Integer point;
 
     private Date createTime;
@@ -28,7 +28,7 @@ public class OrderVo  implements Serializable {
                 ", picUrl='" + picUrl + '\'' +
                 ", title='" + title + '\'' +
                 ", point=" + point +
-                ", name='" + name + '\'' +
+                ", nickName='" + nickName + '\'' +
                 ", createTime=" + createTime +
                 ", addressVo=" + addressVo +
                 '}';
@@ -66,12 +66,12 @@ public class OrderVo  implements Serializable {
         this.point = point;
     }
 
-    public String getName() {
-        return name;
+    public String getNickName() {
+        return nickName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
     }
 
     public Date getCreateTime() {

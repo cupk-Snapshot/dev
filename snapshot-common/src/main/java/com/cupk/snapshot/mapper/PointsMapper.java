@@ -19,6 +19,10 @@ public interface PointsMapper extends BaseMapper<Points> {
      */
     Integer getTotalPoints(@Param("userId") Long userId);
 
+    /**
+     * 获取总赠送积分
+     */
+    Integer getAllPoints();
 }
 
 

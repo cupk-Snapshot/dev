@@ -63,8 +63,23 @@ public class GoodsController {
         boolean flag = goodsService.update(updateWrapper);
         if (flag) {
             return R.success("修改成功");
-        }  else {
+        } else {
             return R.error("修改失败");
+        }
+    }
+
+    /**
+     * 新增商品
+     */
+    @PostMapping("/add")
+    public R getAll(@RequestParam("picUrl") String picUrl, @RequestParam("point") Integer point,
+                    @RequestParam("stocks") Integer stocks, @RequestParam("title") String title) {
+        Goods goods = new Goods(title, picUrl, point, stocks);
+        boolean flag = goodsService.save(goods);
+        if (flag) {
+            return R.success("添加成功");
+        } else {
+            return R.error("添加失败");
         }
     }
 
@@ -84,6 +99,7 @@ public class GoodsController {
 //        return R.success(res);
 //    }
 //
+
     /**
      * 批量删除
      */
@@ -92,7 +108,7 @@ public class GoodsController {
         boolean flag = goodsService.removeBatchByIds(ids);
         if (flag) {
             return R.success("删除成功");
-        }else {
+        } else {
             return R.error("删除失败");
         }
     }

@@ -43,8 +43,8 @@ public class AddressController {
     /**
      * 获取默认收货地址
      */
-    @GetMapping("/default/{user_id}")
-    public R getDefault(@PathVariable("user_id") Long userId) {
+    @GetMapping("/default")
+    public R getDefault(@RequestParam("user_id") Long userId) {
         Address address = addressService.getOne(
                 new LambdaQueryWrapper<Address>().eq(Address::getIsDefault, 1)
                         .and(qw -> {
