@@ -1,27 +1,34 @@
 package com.cupk.snapshot.constant;
 
-public enum HttpStatus {
+/**
+ * Http状态码
+ * Created by Guo Tianyou on 2023/6/8.
+ */
+public class HttpStatus {
 
-    SUCCESS(200, "SUCCESS"),
-    NOT_FOUNT(404, "NOT_FOUNT"),
-    UNAUTHORIZED(401, "Unauthorized"),
-    FORBIDDEN(403, "Forbidden"),
-    METHOD_NOT_ALLOWED(405, "Method Not Allowed"),
-    INTERNAL_SERVER_ERROR(500, "INTERNAL_SERVER_ERROR");
+    /*
+     * HTTP Status-Code 200: OK
+     */
+    public static final int HTTP_OK = 200;
 
-    private final int code;
-    private final String msg;
+    /*
+     * HTTP Status-Code 400: Bad request
+     */
+    public static final int HTTP_BAD_REQUEST = 400;
 
-    HttpStatus(int code, String msg) {
-        this.code = code;
-        this.msg = msg;
-    }
+    /*
+     * HTTP Status-Code 401: Bad Unauthorized
+     */
+    public static final int HTTP_UNAUTHORIZED = 401;
 
-    public int getCode() {
-        return code;
-    }
+    /*
+     * HTTP Status-Code 404: Not found
+     */
+    public static final int HTTP_NOT_FOUND = 404;
 
-    public String getMsg() {
-        return msg;
-    }
+    /*
+     * HTTP Status-Code 500: Internal error
+     */
+    public static final int HTTP_INTERNAL_ERROR = 500;
+
 }

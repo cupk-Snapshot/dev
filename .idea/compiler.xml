@@ -2,21 +2,38 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="snapshot-auth" />
         <module name="snapshot-gateway" />
-        <module name="snapshot-file" />
-        <module name="snapshot-api" />
         <module name="snapshot-admin" />
         <module name="snapshot-common" />
+        <module name="snapshot-user" />
+        <module name="snapshot-file" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="snapshot-api" target="1.8" />
+      <module name="snapshot-doc" target="1.8" />
       <module name="snapshot-media" target="1.8" />
+      <module name="snapshot-test" target="1.8" />
       <module name="snapshot-vue" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="snapshot-admin" options="-parameters" />
+      <module name="snapshot-api" options="-parameters" />
+      <module name="snapshot-auth" options="-parameters" />
+      <module name="snapshot-common" options="-parameters" />
+      <module name="snapshot-doc" options="-parameters" />
+      <module name="snapshot-file" options="-parameters" />
+      <module name="snapshot-gateway" options="-parameters" />
+      <module name="snapshot-test" options="-parameters" />
+      <module name="snapshot-user" options="-parameters" />
+    </option>
   </component>
 </project>

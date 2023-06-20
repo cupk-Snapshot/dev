@@ -1,0 +1,58 @@
+2023-06-12 22:54:06,134 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2023-06-12 22:54:06,137 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2023-06-12 22:54:06,138 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2023-06-12 22:54:06,138 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2023-06-12 22:54:07,481 INFO Load instance extension handler []
+
+2023-06-12 22:54:39,104 INFO Client connection 1686581678904_192.168.10.1_64882 connect
+
+2023-06-12 22:54:42,873 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=0}, 1686581678904_192.168.10.1_64882
+
+2023-06-12 22:56:23,324 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=1}, 1686581678904_192.168.10.1_64882
+
+2023-06-12 22:56:23,657 INFO Client connection 1686581678904_192.168.10.1_64882 disconnect, remove instances and subscribers
+
+2023-06-12 22:56:28,645 INFO Client connection 1686581788634_192.168.10.1_65105 connect
+
+2023-06-12 22:56:28,748 INFO Client connection 1686581788660_192.168.10.1_65106 connect
+
+2023-06-12 22:56:30,378 INFO Client connection 1686581788660_192.168.10.1_65106 disconnect, remove instances and subscribers
+
+2023-06-12 22:56:30,995 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=2}, 1686581788634_192.168.10.1_65105
+
+2023-06-12 22:58:01,524 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=3}, 1686581788634_192.168.10.1_65105
+
+2023-06-12 22:58:01,835 INFO Client connection 1686581788634_192.168.10.1_65105 disconnect, remove instances and subscribers
+
+2023-06-12 22:58:06,538 INFO Client connection 1686581886530_192.168.10.1_56119 connect
+
+2023-06-12 22:58:07,159 INFO Client connection 1686581887065_192.168.10.1_56120 connect
+
+2023-06-12 22:58:08,721 INFO Client connection 1686581887065_192.168.10.1_56120 disconnect, remove instances and subscribers
+
+2023-06-12 22:58:08,745 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=4}, 1686581886530_192.168.10.1_56119
+
+2023-06-12 22:59:26,052 INFO Client connection 1686581965968_192.168.10.1_56211 connect
+
+2023-06-12 22:59:29,679 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-user-api', ephemeral=true, revision=0}, 1686581965968_192.168.10.1_56211
+
+2023-06-12 23:02:03,411 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-user-api', ephemeral=true, revision=1}, 1686581965968_192.168.10.1_56211
+
+2023-06-12 23:02:03,727 INFO Client connection 1686581965968_192.168.10.1_56211 disconnect, remove instances and subscribers
+
+2023-06-12 23:02:13,933 INFO Client connection 1686582133837_192.168.10.1_56498 connect
+
+2023-06-12 23:02:17,468 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-user-api', ephemeral=true, revision=2}, 1686582133837_192.168.10.1_56498
+
+2023-06-12 23:55:24,987 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=5}, 1686581886530_192.168.10.1_56119
+
+2023-06-12 23:55:25,300 INFO Client connection 1686581886530_192.168.10.1_56119 disconnect, remove instances and subscribers
+
+2023-06-12 23:55:30,013 INFO Client connection 1686585330008_192.168.10.1_54625 connect
+
+2023-06-12 23:55:32,089 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='snapshot-oauth2-server', ephemeral=true, revision=6}, 1686585330008_192.168.10.1_54625
+

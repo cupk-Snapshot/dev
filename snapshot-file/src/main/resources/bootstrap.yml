@@ -1,0 +1,14 @@
+server:
+  port: 9988
+  servlet:
+    context-path: /file
+spring:
+  application:
+    name: snapshot-file
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 82.156.156.143:8848
+      config:
+        server-addr: 82.156.156.143:8848
+        file-extension: yaml

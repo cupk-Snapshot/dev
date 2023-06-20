@@ -1,0 +1,20 @@
+{
+    "id": "cc-inputSelView",
+    "name": "基于原生input增强选择picker插件 可用于地图定位选位置 页面跳转选数据",
+    "displayName": "基于原生input增强选择picker插件 可用于地图定位选位置 页面跳转选数据",
+    "version": "1.0",
+    "description": "基于原生input增强选择picker插件 可用于地图定位选位置 页面跳转选数据",
+    "keywords": [
+        "位置",
+        "选择位置",
+        "定位",
+        "地图",
+        "自定义picker"
+    ],
+    "dcloudext": {
+        "category": [
+            "前端组件",
+            "通用组件"
+        ]
+    }
+}

@@ -1,8 +1,9 @@
 package com.cupk.snapshot.filter;
 
-import cn.hutool.db.nosql.redis.RedisDS;
+import com.cupk.snapshot.utils.RedisUtils;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
@@ -19,26 +20,35 @@ import reactor.core.publisher.Mono;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * JwtToken过滤器
+ * Created by Guo Tianyou on 2023/6/9.
+ */
 @Component
 public class JwtTokenFilter implements GlobalFilter, Ordered {
+
+    @Autowired
+    private RedisUtils redisUtils;
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         ServerHttpRequest request = exchange.getRequest();
         String path = request.getPath().value();
-        if(path.equals("/oauth/token")) {
+        //放行全部令牌接口，注册接口
+        if(path.startsWith("/oauth") || path.equals("/user/signup")) {
             return chain.filter(exchange);
         }
         List<String> list = request.getHeaders().get("Authorization");
         if(!CollectionUtils.isEmpty(list)) {
             String accessToken = list.get(0).replaceFirst("Bearer ", "");
             if(!StringUtils.isEmpty(accessToken)) {
-                boolean flag = RedisDS.create().getJedis().exists("access_token:" + accessToken);
+                boolean flag = redisUtils.exists("access_token:" + accessToken);
                 if(flag) {
                     return chain.filter(exchange);
                 }
             }
         }
+        //未携带access_token或携带错误access_token
         ServerHttpResponse response = exchange.getResponse();
         response.getHeaders().add("content-type", "application/json;charset=UTF-8");
         response.setStatusCode(HttpStatus.UNAUTHORIZED);
@@ -55,6 +65,9 @@ public class JwtTokenFilter implements GlobalFilter, Ordered {
         }
     }
 
+    /**
+     * 过滤器加载优先级
+     */
     @Override
     public int getOrder() {
         return 0;

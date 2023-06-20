@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="snapshot_auth@192.168.10.130" uuid="da851537-5bf4-4464-b531-cb04288dae7c">
+    <data-source source="LOCAL" name="snapshot_db@192.168.10.130" uuid="da851537-5bf4-4464-b531-cb04288dae7c">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
+      <remarks>随手拍交通违法监督系统</remarks>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://192.168.10.130:3306/snapshot_auth</jdbc-url>
+      <jdbc-url>jdbc:mysql://192.168.10.130:3306/snapshot_db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

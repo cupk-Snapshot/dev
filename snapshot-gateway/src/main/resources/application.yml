@@ -1,20 +1,55 @@
-server:
-  port: 9527
-
 spring:
-  application:
-    name: snapshot-gateway
-  cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true               #开启从注册中心动态创建路由功能，利用微服务名进行路由
-      routes:
-        - id: snapshot-api-route    #路由的ID，没有固定规则但要求唯一，建议配合服务名
-          uri: lb://snapshot-api      #匹配后提供服务的路由地址
-          predicates:
-            - Path=/test/**             # 断言，路径相匹配的进行路由
-    nacos:
-      discovery:
-        server-addr: localhost:8848
+  profiles:
+    active: test
 
+#server:
+#  port: 9955
+#spring:
+#  application:
+#    name: snapshot-gateway
+#  redis:
+#    database: 0
+#    host: 192.168.10.130
+#    password: gty20021112
+#    port: 6379
+#    timeout: 0
+#    jedis:
+#      pool:
+#        max-active: 8
+#        max-idle: 8
+#        min-idle: 0
+#        max-wait: -1
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 192.168.10.130:8848
+#    gateway:
+#      globalcors:
+#        corsConfigurations:
+#          '[/**]':
+#            max-age: 3600
+#            allowedOrigins: "*"
+#            allowedHeaders: "*"
+#            allowCredentials: true
+#            allowedMethods:
+#              - "GET"
+#              - "POST"
+#              - "DELETE"
+#              - "PUT"
+#              - "OPTION"
+#      discovery:
+#        locator:
+#          enabled: true
+#      routes:
+#        - id: snapshot-oauth2-server
+#          uri: lb://snapshot-oauth2-server
+#          predicates:
+#            - Path=/oauth/**
+#        - id: snapshot-user-api
+#          uri: lb://snapshot-user-api
+#          predicates:
+#            - Path=/user/**
+#        - id: snapshot-admin-api
+#          uri: lb://snapshot-admin-api
+#          predicates:
+#            - Path=/admin/**
