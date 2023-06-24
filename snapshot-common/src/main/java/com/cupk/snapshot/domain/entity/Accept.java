@@ -89,6 +89,12 @@ public class Accept implements Serializable {
     @TableField(value = "is_deleted")
     private Integer isDeleted;
 
+    public Accept(Long reportId, Integer isPublic, String status) {
+        this.reportId = reportId;
+        this.isPublic = isPublic;
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         return "Accept{" +

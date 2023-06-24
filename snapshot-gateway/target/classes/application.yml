@@ -1,0 +1,55 @@
+spring:
+  profiles:
+    active: test
+
+#server:
+#  port: 9955
+#spring:
+#  application:
+#    name: snapshot-gateway
+#  redis:
+#    database: 0
+#    host: 192.168.10.130
+#    password: gty20021112
+#    port: 6379
+#    timeout: 0
+#    jedis:
+#      pool:
+#        max-active: 8
+#        max-idle: 8
+#        min-idle: 0
+#        max-wait: -1
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 192.168.10.130:8848
+#    gateway:
+#      globalcors:
+#        corsConfigurations:
+#          '[/**]':
+#            max-age: 3600
+#            allowedOrigins: "*"
+#            allowedHeaders: "*"
+#            allowCredentials: true
+#            allowedMethods:
+#              - "GET"
+#              - "POST"
+#              - "DELETE"
+#              - "PUT"
+#              - "OPTION"
+#      discovery:
+#        locator:
+#          enabled: true
+#      routes:
+#        - id: snapshot-oauth2-server
+#          uri: lb://snapshot-oauth2-server
+#          predicates:
+#            - Path=/oauth/**
+#        - id: snapshot-user-api
+#          uri: lb://snapshot-user-api
+#          predicates:
+#            - Path=/user/**
+#        - id: snapshot-admin-api
+#          uri: lb://snapshot-admin-api
+#          predicates:
+#            - Path=/admin/**

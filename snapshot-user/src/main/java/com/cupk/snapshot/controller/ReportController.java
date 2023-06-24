@@ -70,6 +70,11 @@ public class ReportController {
         }
         Report report = new Report(userId, address, type, hphm, s1, s2, s3);
         reportService.save(report);
+
+        Accept accept = new Accept(report.getReportId(),1,"等待审核");
+
+
+        acceptService.save(accept);
         return R.success("提交成功");
     }
 

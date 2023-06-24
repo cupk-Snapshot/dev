@@ -1,0 +1,32 @@
+spring:
+  profiles:
+    active: test
+
+#server:
+#  port: 9988
+#  servlet:
+#    context-path: /file
+#spring:
+#  application:
+#    name: snapshot-file
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 192.168.10.130:8848
+#  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://192.168.10.130:3306/snapshot_db?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false
+#    username: root
+#    password: gty20021112
+#minio:
+#  endpoint: http://192.168.10.130:9000
+#  access-key: root
+#  secret-key: gty20021112
+#  bucket:
+#    files: picture
+#qiniu:
+#  oss:
+#    access-key: IxuPMbwBSg8VcpGBarnAGR3bgBF7LI7ALItIOkXc
+#    secret-key: 2hkJpItSk8fjq3XLgf_XxKKuFQXzNbo4DExv7qQk
+#    bucket: hualuosakura
