@@ -52,7 +52,8 @@ const state = reactive<TableDemoState>({
     },
     // 搜索表单，动态生成（传空数组时，将不显示搜索，注意格式）
     search: [
-      {label: '用户ID', prop: 'uid', placeholder: '请输入要搜索的信息', required: false, type: 'input'},
+      // {label: '订单号', prop: 'uid', placeholder: '请输入要查询的订单号', required: false, type: 'input'},
+      {label: '', prop: 'uid', placeholder: '请输入订单号', required: false, type: 'input'},
     ],
     // 搜索参数（不用传，用于分页、搜索时传给后台的值，`getTableData` 中使用）
     param: {

@@ -77,7 +77,7 @@
 								</el-form-item>
 							</el-col>
 							<el-col :xs="24" :sm="12" :md="8" :lg="6" :xl="4" class="mb20">
-								<el-form-item label="签名">
+								<el-form-item label="姓名">
 									<el-input v-model="state.personalForm.name" placeholder="请输入姓名" clearable></el-input>
 								</el-form-item>
 							</el-col>

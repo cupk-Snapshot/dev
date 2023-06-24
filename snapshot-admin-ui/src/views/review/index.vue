@@ -58,7 +58,7 @@ const state = reactive<TableDemoState>({
 		},
 		// 搜索表单，动态生成（传空数组时，将不显示搜索，注意格式）
 		search: [
-			{ label: '用户ID', prop: 'uid', placeholder: '请输入用户ID', required: false, type: 'input' },
+			{ label: '', prop: 'uid', placeholder: '请输入审核ID', required: false, type: 'input' },
 			{ label: '举报位置', prop: 'address', placeholder: '请输入详细举报位置', required: false, type: 'input' },
 			{ label: '联系电话', prop: 'phone', placeholder: '请输入采样点联系电话', required: false, type: 'input' },
 			{ label: '举报时间', prop: 'time', placeholder: '请选择', required: false, type: 'date' },
